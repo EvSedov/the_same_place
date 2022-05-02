@@ -7,6 +7,10 @@ body {
   justify-content: space-between;
 }
 
+.header .container {
+  background-color: #d1cfcd;
+}
+
 .logo {
   width: 115px;
   height: 115px;
@@ -20,9 +24,14 @@ body {
   background-size: cover;
 }
 
-h2,
-.footer {
-  color: rgb(139, 81, 29);
+.active-link,
+h1,
+h3 {
+  color: rgb(139, 81, 29) !important;
+}
+
+.nav-link {
+  font-weight: bold;
 }
 
 .main-text {
@@ -31,7 +40,13 @@ h2,
 
 .footer {
   margin-top: auto;
+  color: rgb(139, 81, 29)
 }
+
+.footer .container {
+  background-color: #c5bbb1;
+}
+
 .footer-logo {
   width: 35px;
   height: 35px;
