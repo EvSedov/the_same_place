@@ -4,24 +4,29 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 1px;
 }
 
-.header .container {
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 1 0;
+  background-image: url(../img/bg-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
   background-color: #d1cfcd;
 }
 
 .logo {
-  width: 115px;
-  height: 115px;
-}
-
-.main .container {
-  height: 798px;
-  background-image: url(../img/main-bg.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100px;
+  height: 100px;
 }
 
 .active-link,
@@ -33,17 +38,20 @@ h3 {
 .nav-link {
   font-weight: bold;
 }
+.main-content {
+  background-color: rgba(255, 255, 255, 0.4);
+}
 
 .main-text {
   text-align: justify;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .footer {
-  margin-top: auto;
-  color: rgb(139, 81, 29)
-}
-
-.footer .container {
+  margin-top: auto !important;
+  color: rgb(139, 81, 29);
   background-color: #c5bbb1;
 }
 
