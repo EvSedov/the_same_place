@@ -59,3 +59,12 @@ h3 {
   width: 35px;
   height: 35px;
 }
+
+.footer p {
+  width: 150px !important;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
