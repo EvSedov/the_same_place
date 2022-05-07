@@ -21,12 +21,12 @@ body {
 }
 
 .header {
-  background-color: #d1cfcd;
+  /* background-color: #d1cfcd; */
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 115px;
+  height: 115px;
 }
 
 .active-link,
@@ -39,7 +39,8 @@ h3 {
   font-weight: bold;
 }
 .main-content {
-  background-color: rgba(255, 255, 255, 0.4);
+  width: 60%;
+  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
 .main-text {
@@ -51,8 +52,8 @@ h3 {
 
 .footer {
   margin-top: auto !important;
-  color: rgb(139, 81, 29);
-  background-color: #c5bbb1;
+  /* color: rgb(139, 81, 29); */
+  /* background-color: #c5bbb1; */
 }
 
 .footer-logo {
