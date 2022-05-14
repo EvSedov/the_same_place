@@ -1,1 +1,0 @@
-console.log({name:"Evgeniy",age:43,lang:"JS",framework:"React"});
