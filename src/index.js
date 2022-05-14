@@ -1,12 +1,3 @@
-const userStack = {
-  lang: 'JS',
-  framework: 'React'
-};
-
-const user = {
-  name: 'Evgeniy',
-  age: 43,
-  ...userStack
-}
-
-console.log(user);
+import './css/bootstrap-reboot.min.css';
+import './css/bootstrap.min.css';
+import './css/style.css';
