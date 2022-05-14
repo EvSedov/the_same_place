@@ -1,0 +1,28 @@
+{
+  "name": "the_same_place",
+  "version": "1.0.0",
+  "description": "[Ссылка на сайт](https://evsedov.github.io/the_same_place/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_ENV=development && webpack serve --open",
+    "dev": "export NODE_ENV=development && webpack",
+    "build": "export NODE_ENV=production && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvSedov/the_same_place.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvSedov/the_same_place/issues"
+  },
+  "homepage": "https://github.com/EvSedov/the_same_place#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
