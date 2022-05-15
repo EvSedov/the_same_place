@@ -20,6 +20,11 @@ module.exports = {
       watch: true
     }
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
