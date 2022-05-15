@@ -8,9 +8,11 @@ console.log(mode + ' mode');
 module.exports = {
   mode: mode,
   output: {
-    assetModuleFilename: "assets/[hash][ext][query]",
+    filename: '[name][contenthash].js',
+    assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
+  devtool: 'source-map',
   devServer: {
     open: true,
     static: {
@@ -30,15 +32,15 @@ module.exports = {
     rules: [
       {
         test: /\.(html)$/i,
-        loader: "html-loader"
+        loader: 'html-loader'
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.(sa|sc|c)ss$/i,
         use: [
-          (mode === 'development') ? "style-loader" : MiniCssExtractPlugin.loader,
+          (mode === 'development') ? 'style-loader' : MiniCssExtractPlugin.loader,
           "css-loader",
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
                 plugins: [
@@ -52,7 +54,7 @@ module.exports = {
               },
             },
           },
-          "sass-loader",
+          'sass-loader',
         ],
       },
       {
@@ -68,6 +70,16 @@ module.exports = {
         loader: 'pug-loader',
         exclude: /(node_modules|bower_components)/,
       },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
     ]
   }
 }
