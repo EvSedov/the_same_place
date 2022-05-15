@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Pattaya;
+  src: url("../fonts/Pattaya-Regular.ttf");
+}
 body {
   margin: 0;
   padding: 0;
@@ -20,9 +24,9 @@ body {
   background-size: cover;
 }
 
-.header {
-  /* background-color: #d1cfcd; */
-}
+/* .header {
+  background-color: #d1cfcd;
+} */
 
 .logo {
   width: 115px;

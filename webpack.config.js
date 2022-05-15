@@ -11,18 +11,25 @@ module.exports = {
     assetModuleFilename: "assets/[hash][ext][query]",
     clean: true,
   },
+  devServer: {
+    open: true,
+    static: {
+      directory: './src',
+      watch: true
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.pug'
     })
   ],
   module: {
     rules: [
       {
-        test: /\.html$/i,
+        test: /\.(html)$/i,
         loader: "html-loader"
       },
       {
@@ -51,8 +58,16 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-      }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        exclude: /(node_modules|bower_components)/,
+      },
     ]
-
   }
 }
