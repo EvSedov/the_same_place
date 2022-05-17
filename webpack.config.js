@@ -27,10 +27,15 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css'
+      filename: '[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.pug'
+      template: './src/pug/paiges/contacts.pug',
+      filename: 'contacts.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/paiges/index.pug',
+      filename: 'index.html'
     })
   ],
   module: {

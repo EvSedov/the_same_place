@@ -1,14 +1,14 @@
-include pug/libs/_libs
+include ../../blocks/libs/_libs
 
 doctype html
 html(lang='ru')
-  include pug/_head
+  include ../../blocks/head/_head
   body.bg-light
     header.header
       nav.navbar.navbar-expand-lg.navbar-light
         .container
           a.navbar-brand(href='#')
-            img.logo(src=require('./images/logo.png') alt='logo' loading='lazy')
+            img.logo(src=require('../../images/logo.png') alt='logo' loading='lazy')
           button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
             span.navbar-toggler-icon
           #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end
@@ -16,7 +16,7 @@ html(lang='ru')
               a.nav-link.active-link(aria-current='page' href='#') Главная
               a.nav-link.font-weight-bold(href='#') Квартиры и аппартаменты
               a.nav-link.font-weight-bold(href='#') Рекомендую посетить
-              a.nav-link.font-weight-bold(href='#') Контакты
+              a.nav-link.font-weight-bold(href='./contacts.html') Контакты
     main.main
       .container
         .row
@@ -32,4 +32,4 @@ html(lang='ru')
               | квартиру в Новосибирске. И неважно, для каких целей Вы прибываете
               | в город, будь то командировка, визит к родственникам или просто
               | мини-путешествие.
-    include pug/_footer
+    include ../../blocks/footer/_footer
