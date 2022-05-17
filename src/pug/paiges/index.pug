@@ -4,19 +4,7 @@ doctype html
 html(lang='ru')
   include ../../blocks/head/_head
   body.bg-light
-    header.header
-      nav.navbar.navbar-expand-lg.navbar-light
-        .container
-          a.navbar-brand(href='#')
-            img.logo(src=require('../../images/logo.png') alt='logo' loading='lazy')
-          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-          #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end
-            .navbar-nav.text-uppercase.font-weight-bold
-              a.nav-link.active-link(aria-current='page' href='#') Главная
-              a.nav-link.font-weight-bold(href='#') Квартиры и аппартаменты
-              a.nav-link.font-weight-bold(href='#') Рекомендую посетить
-              a.nav-link.font-weight-bold(href='./contacts.html') Контакты
+    +header('Главная')
     main.main
       .container
         .row

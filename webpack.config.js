@@ -30,12 +30,20 @@ module.exports = {
       filename: '[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
+      template: './src/pug/paiges/index.pug',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/pug/paiges/contacts.pug',
       filename: 'contacts.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/pug/paiges/index.pug',
-      filename: 'index.html'
+      template: './src/pug/paiges/apartments.pug',
+      filename: 'apartments.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/paiges/recommend.pug',
+      filename: 'recommend.html'
     })
   ],
   module: {
