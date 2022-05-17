@@ -85,7 +85,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: 'pug-loader',
+        loader: '@webdiscus/pug-loader',
         exclude: /(node_modules|bower_components)/,
       },
       {
