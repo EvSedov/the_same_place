@@ -1,12 +1,9 @@
-include ../../blocks/libs/_libs
+extends ../layout
 
-doctype html
-html(lang="en")
-  include ../../blocks/head/_head
-  body.bg-light
+block header
     +header('Контакты')
-    main.main
-      .container
-        .row
-          h1 Эта страница с контактами!
-  include ../../blocks/footer/_footer
+block main
+  main.main
+    .container
+      .row
+        h1 Эта страница с контактами!

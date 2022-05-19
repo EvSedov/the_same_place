@@ -1,12 +1,9 @@
-include ../../blocks/libs/_libs
+extends ../layout
 
-doctype html
-html(lang="en")
-  include ../../blocks/head/_head
-  body.bg-light
-    +header('Квартиры и аппартаменты')
-    main.main
-      .container
-        .row
-          h1 Эта страница с квартирами!
-  include ../../blocks/footer/_footer
+block header
+  +header('Квартиры и аппартаменты')
+block main
+  main.main
+    .container
+      .row
+        h1 Эта страница с квартирами!

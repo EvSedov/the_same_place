@@ -1,12 +1,9 @@
-include ../../blocks/libs/_libs
+extends ../layout
 
-doctype html
-html(lang="en")
-  include ../../blocks/head/_head
-  body.bg-light
-    +header('Рекомендую посетить')
-    main.main
-      .container
-        .row
-          h1 Эта страница с рекомендациями!
-  include ../../blocks/footer/_footer
+block header
+  +header('Рекомендую посетить')
+block main
+  main.main
+    .container
+      .row
+        h1 Эта страница с рекомендациями!
