@@ -1,9 +1,53 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("../fonts/MontserratAlternates-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("../fonts/MontserratAlternates-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
+  font-family: "Comfortaa", sans-serif !important;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -19,10 +63,13 @@ body {
 
 .main {
   flex: 1 1 0;
+}
+
+.main-bg {
   background-image: url('../images/bg-main.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
 }
 
 .logo {
@@ -30,12 +77,19 @@ body {
   height: 115px;
 }
 
-.active-link,
+.active-link {
+  color: #C9B200 !important;
+}
+
 h1,
 h3 {
   font-family: "Montserrat";
   font-weight: bold;
-  color: rgb(139, 81, 29) !important;
+  color: #8B511D !important;
+}
+
+h3 {
+  font-family: "MontserratAlternates";
 }
 
 .nav-link {
@@ -44,7 +98,6 @@ h3 {
 
 .main-content {
   width: 60%;
-  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
 .main-text {
@@ -56,8 +109,6 @@ h3 {
 
 .footer {
   margin-top: auto !important;
-  /* color: rgb(139, 81, 29); */
-  /* background-color: #c5bbb1; */
 }
 
 .footer-logo {

@@ -1,9 +1,20 @@
 extends ../layout
 
+block append head
+  script(src="https://api-maps.yandex.ru/2.1/?apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU" type="text/javascript")
+
 block header
   +header('Квартиры и аппартаменты')
+
 block main
   main.main
     .container
       .row
-        h1 Эта страница с квартирами!
+        .col 
+          #map(style="width: 100%; height: 400px")
+      .row
+        p.fs-3.fw-bolder.mt-4 Наши номера
+        hr
+block append footer
+  script
+    include ../../../src/js/map.js
