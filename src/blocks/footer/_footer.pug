@@ -1,12 +1,11 @@
 include ../libs/_libs
 
 footer.footer.mt-1
-      .container
+      .container.bg-light
         .row.py-2.d-flex.flex-column.flex-sm-row.justufy-content-center.align-items-center
           .col.col-sm-4.d-flex.justify-content-center.justify-content-sm-start.align-items-center
             +image("footer-logo", "logo", "png")
-            //- img.footer-logo(src='./images/logo.png' alt='logo' loading='lazy')
-            p.fw-bold.ps-2.py-0.m-0.text-uppercase То самое место
+            p.fs-6.fw-bold.ps-2.py-0.m-0.font-monospace ТО САМОЕ МЕСТО
           .social.col.col-sm-4.d-flex.justify-content-center.align-items-center.my-2
             a.social-link(href='https://vk.com/to_samoe_mesto_nsk' target='_blank')
               img.social-icon(src=require('../../../src/images/vk.svg') alt='vc icon')
@@ -15,4 +14,4 @@ footer.footer.mt-1
             a.social-link(href='https://wa.me/79137400459' target='_blank')
               img.social-icon(src=require('../../../src/images/whatsapp.png') alt='whatsapp icon')
           .col.col-sm-4.d-flex.justify-content-center.justify-content-sm-end.align-items-center
-            p.m-0.p-0.text-center.text-sm-end © 2022
+            p.fs-5.m-0.p-0.text-center.text-sm-end.font-monospace © 2022

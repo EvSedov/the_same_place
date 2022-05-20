@@ -1,2 +1,2 @@
 mixin image(className, name, ext)
-  img(class=className, src=require(`../../../src/images/${name}.${ext}`), alt=name)
+  img(class=className, src=require(`../../../src/images/${name}.${ext}`), alt=`image ${name}`, loading='lazy')
