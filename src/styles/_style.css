@@ -15,22 +15,6 @@
 }
 
 @font-face {
-  font-family: "MontserratAlternates";
-  src: url("../fonts/MontserratAlternates-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "MontserratAlternates";
-  src: url("../fonts/MontserratAlternates-SemiBold.ttf");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Comfortaa";
   src: url("../fonts/Comfortaa-Bold.ttf");
   font-weight: bold;
@@ -83,14 +67,20 @@ body {
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+
+h1,
+h2,
 h3 {
   font-family: "Montserrat";
   font-weight: bold;
   color: #8B511D !important;
-}
-
-h3 {
-  font-family: "MontserratAlternates";
 }
 
 .nav-link {
@@ -115,10 +105,6 @@ h3 {
 .footer-logo {
   width: 35px;
   height: 35px;
-}
-
-.footer p {
-  width: 150px !important;
 }
 
 .social-icon {
