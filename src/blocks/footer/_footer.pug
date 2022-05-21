@@ -12,20 +12,20 @@ footer.footer.mt-1.bg-light.mt-3
                 | Все права защищены.
 
           .contacts.col-8.mx-auto.col-lg-5.d-flex.flex-column.row
-            p.fw-bold.m-0.text-center.lh-1 
+            p.fw-bold.m-0.text-center.lh-1
               small.text-muted
                 | Написать или позвонить мне можно нажав на
                 | иконку соцсетей или на номер телефона
-            .social.d-flex.flex-column-reverse.flex-sm-row.justify-content-around.align-items-center.my-2
-              .text-nowrap
-                a.social-link(href='https://vk.com/to_samoe_mesto_nsk' target='_blank')
+            .social.d-flex.flex-column-reverse.flex-sm-row.justify-content-around.align-items-center.my-2.bg-secondary.bg-opacity-25
+              .text-nowrap.d-flex
+                a.social-link(href='https://t.me/to_samoe_mesto_nsk' target='_blank')
+                  i.bi.bi-telegram(style="font-size: 2rem")
+                a.social-link.px-3(href='https://wa.me/79137400459' target='_blank')
+                  i.bi.bi-whatsapp(style="font-size: 2rem; color: green")
+                a.social-link.my-auto(href='https://vk.com/to_samoe_mesto_nsk' target='_blank')
                   img.social-icon(src=require('../../../src/images/vk.svg') alt='vc icon')
-                a.social-link.px-3(href='https://t.me/to_samoe_mesto_nsk' target='_blank')
-                  img.social-icon(src=require('../../../src/images/telegram.svg') alt='telegram icon')
-                a.social-link(href='https://wa.me/79137400459' target='_blank')
-                  img.social-icon(src=require('../../../src/images/whatsapp.png') alt='whatsapp icon')
-              p.fs-6.fw-bold.py-0.m-0.ms-2.font-monospace.text-center
-                a.text-decoration-none.link-warning.text-nowrap(href="tel:+79137400459") 
+              p.fs-6.fw-bold.py-0.m-2.font-monospace.text-center.lh-1
+                a.text-decoration-none.link-primary.text-nowrap(href="tel:+79137400459") 
                   | +7 (913) 740-04-59
                   | #[br]
                   | Ксения Контиева
