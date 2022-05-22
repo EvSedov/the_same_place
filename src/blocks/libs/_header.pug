@@ -7,7 +7,7 @@ mixin header(nameForActiveLink='Главная')
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end
-          .navbar-nav.text-uppercase.font-weight-bold
+          .navbar-nav.text-uppercase.fw-bold
             each key, value in { 'Главная': './index.html', 'Квартиры и апартаменты': './apartments.html', 'Рекомендую посетить': './recommend.html', 'Контакты': './contacts.html' }
               if value == nameForActiveLink
                 a.nav-link.active-link(aria-current='page' href=key)= value
