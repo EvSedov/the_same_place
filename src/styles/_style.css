@@ -79,7 +79,6 @@ h6,
 h1,
 h2,
 h3 {
-  font-family: "Montserrat";
   font-weight: bold;
   color: #8B511D !important;
 }
@@ -93,7 +92,6 @@ h3 {
 }
 
 .main-text {
-  text-align: justify;
   color: black;
   font-weight: bold;
   font-size: 16px;
@@ -111,4 +109,8 @@ h3 {
 .social-icon {
   width: 32px !important;
   height: 32px !important;
+}
+
+.social-text {
+  color: #8B511D !important;
 }
