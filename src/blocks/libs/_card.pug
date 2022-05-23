@@ -1,17 +1,12 @@
-mixin card(imgClassName, imgName, imgAltName, cardTitle, cardText, arrSmallCardText)
-  .card.mb-5
-    .row.g-0.d-flex.flex-column.flex-lg-row
-      .col.col-lg-4
-        +image(imgClassName, imgName, imgAltName)
-      .col.col-lg-6
+mixin card(imgClassName, imgName, imgExt, title, subTitle, text, subText='')
+  .card.mt-3.bg-light
+    .row.g-0
+      .col-md-5
+        +image(imgClassName, imgName, imgExt)
+      .col-md-7
         .card-body
-          h5.card-title.fw-bold.text-center.text-lg-start= cardTitle
-          p.card-text.fw-bolder.text-center.text-lg-start= cardText
-          each value in arrSmallCardText
-            p.card-text.m-0.text-center.text-lg-start
-              small.text-muted.fw-bolder= value
-      .col.col-lg-2.mt-lg-5.mb-3
-        p.card-text.text-center.m-0.mt-4 от
-        h5.card-title.text-center.fw-bold 2500 руб.
-        .d-flex.justify-content-center.mt-4
-          a.btn.btn-secondary(href='#') Подробнее
+          h1.card-title.fw-bold.text-uppercase= title
+          h3.card-title.fw-bold.my-4= subTitle
+          p.card-text.main-text.fs-5.mt-3.fw-normal.lh-sm= text
+          p.card-text
+            small.text-muted= subText

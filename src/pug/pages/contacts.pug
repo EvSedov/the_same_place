@@ -1,9 +1,14 @@
 extends ../layout
 
+block variables
+  - var indexTitle = 'То самое место';
+  - var indexSubTitle = 'КРАТКОСРОЧНАЯ АРЕНДА КВАРТИР В НОВОСИБИРСКЕ';
+  - var indexText = 'Это ТО САМОЕ МЕСТО, где Вы найдете идеальную, во всех смыслах, квартиру в Новосибирске. И неважно, для каких целей Вы прибываете в город, будь то командировка, визит к родственникам или просто мини-путешествие.'
+
 block header
-    +header('Контакты')
+  +header('Контакты')
 block main
   main.main
     .container
       .row
-        h1 Эта страница с контактами!
+        +card('card-img-top', 'bg-main', 'jpg', indexTitle, indexSubTitle, indexText)
