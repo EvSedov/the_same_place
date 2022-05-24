@@ -45,6 +45,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/recommend.pug',
       filename: 'recommend.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/european-coast-in-french.pug',
+      filename: 'european-coast-in-french.html'
     })
   ],
   module: {

@@ -1,0 +1,41 @@
+extends ../layout
+
+block header
+  +header('')
+
+block main
+  main.main
+    .container
+      .row
+        .col
+          p.fs-3.fw-bolder.mt-4 Европейский берег по-французски
+          hr
+      .row
+        .col.col-lg-7
+          +carusel()
+        .col.col-lg-5
+          h6.text-center Цены на двое суток и более
+          ul.list-group.list-group-flush
+            li.list-group-item С 15 января по 30 апреля – 2 150 рублей
+            li.list-group-item С 01 мая по 31 мая – 2 500 рублей
+            li.list-group-item С 01 июня по 31 августа – 3 000 рублей
+            li.list-group-item С 01 сентября по 25 декабря – 2 200 рублей
+            li.list-group-item С 26 декабря по 14 января – 3 000 рублей
+          h6.text-center.mt-3 Цены за одни сутки
+          ul.list-group.list-group-flush
+            li.list-group-item С 15 января по 30 апреля –  2 500 рублей
+            li.list-group-item С 01 мая по 31 мая – 2 800 рублей
+            li.list-group-item С 01 июня по 31 августа – 3 400 рублей
+            li.list-group-item С 01 сентября по 25 декабря – 2 500 рублей
+            li.list-group-item С 26 декабря по 14 января – 3 400 рублей
+          p 
+            small Цены указаны на 1-2 человека (спальное место - двуспальная кровать), за третьего человека или дополнительный комплект белья доплата 800 рублей.
+      .row 
+        .col-2
+          h6 Параметры:
+        .col-10 
+          ul(style="list-style-type: none")
+            li ✓ Вместимость: 2+1
+            li ✓ Площадь: 34 кв.м
+            li ✓ Кровати: 1 двуспальная, 1 односпальная
+        hr
