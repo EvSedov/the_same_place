@@ -12,6 +12,8 @@ block append head
   link(rel="preload", as="image", href=require("../../../src/images/DSC_9.jpg"))
   link(rel="preload", as="image", href=require("../../../src/images/DSC_10.jpg"))
   link(rel="preload", as="image", href=require("../../../src/images/DSC_11.jpg"))
+  script(src="https://api-maps.yandex.ru/2.1/?apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU" type="text/javascript")
+
 
 block header
   +header('')
@@ -21,34 +23,112 @@ block main
     .container
       .row
         .col
-          p.fs-3.fw-bolder.mt-4 Европейский берег по-французски
-          hr
+          h3.text-dark.mt-4 Европейский берег по-французски
+        hr
       .row
-        .col.col-lg-7
+        .col-12.col-lg-7
           +carusel()
-        .col.col-lg-5
-          h6.text-center Цены на двое суток и более
+        .col-12.col-lg-5.mt-3.mt-lg-0
+          h5.text-center Цены на двое суток и более
           ul.list-group.list-group-flush
-            li.list-group-item С 15 января по 30 апреля – 2 150 рублей
-            li.list-group-item С 01 мая по 31 мая – 2 500 рублей
-            li.list-group-item С 01 июня по 31 августа – 3 000 рублей
-            li.list-group-item С 01 сентября по 25 декабря – 2 200 рублей
-            li.list-group-item С 26 декабря по 14 января – 3 000 рублей
-          h6.text-center.mt-3 Цены за одни сутки
+            li.list-group-item С 15 января по 30 апреля&nbsp;– 2200 рублей
+            li.list-group-item С 01 мая по 31 августа&nbsp;– 2500 рублей
+            li.list-group-item С 01 сентября по 25 декабря&nbsp;– 2200 рублей
+            li.list-group-item С 26 декабря по 14 января&nbsp;– 3000 рублей
+          h5.text-center.mt-3 Цены за одни сутки
           ul.list-group.list-group-flush
-            li.list-group-item С 15 января по 30 апреля –  2 500 рублей
-            li.list-group-item С 01 мая по 31 мая – 2 800 рублей
-            li.list-group-item С 01 июня по 31 августа – 3 400 рублей
-            li.list-group-item С 01 сентября по 25 декабря – 2 500 рублей
-            li.list-group-item С 26 декабря по 14 января – 3 400 рублей
-          p 
-            small Цены указаны на 1-2 человека (спальное место - двуспальная кровать), за третьего человека или дополнительный комплект белья доплата 800 рублей.
+            li.list-group-item С 15 января по 30 апреля&nbsp;–  2500 рублей
+            li.list-group-item С 01 мая по 31 августа&nbsp;– 2800 рублей
+            li.list-group-item С 01 сентября по 25 декабря&nbsp;– 2500 рублей
+            li.list-group-item С 26 декабря по 14 января&nbsp;– 3400 рублей
+        .col
+          p.my-3.fst-italic
+            small Цены указаны на 1-2 человека (спальное место&nbsp;- двуспальная кровать), за третьего человека или дополнительный комплект белья доплата 
+            small.fw-bold 800 рублей.
+        hr
       .row 
-        .col-2
-          h6 Параметры:
-        .col-10 
+        .col-12.col-lg-2
+          h5 Параметры:
+        .col-12.col-lg-10 
           ul(style="list-style-type: none")
             li ✓ Вместимость: 2+1
             li ✓ Площадь: 34 кв.м
             li ✓ Кровати: 1 двуспальная, 1 односпальная
         hr
+      .row 
+        .col-12.col-lg-2
+          h5 О квартире:
+        .col-12.col-lg-10(style="text-align: justify;")
+          ul(style="list-style-type: none")
+            li
+              p.fw-bolder Уютная и комфортная квартира в микрорайоне Европейский берег&nbsp;&nbsp;- один из самый развитых микрорайонов города с собственной инфраструктурой инабережной. Идеально подходит, как для рабочих поездок, так и романтическихпутешествий.
+            li
+              p
+                span.fw-bolder.text-primary ✓
+                |
+                | В спальне расположены: новая кровать с матрасом из упругогопенополиуретана,  обеспечивающий базовый уровень комфорта; диван-кровать,который расправляется в удобное односпальное место; ЖК телевизор и рабочийстол со стулом.
+            li
+              p
+                span.fw-bolder.text-success ✓
+                |
+                | Кухня обеспечена всей необходимой бытовой техникой (холодильник сморозильной камерой, микроволновая печь, варочная панель, духовой шкаф ичайник), посудой для приготовления пищи и всеми необходимыми столовымиприборами.
+            li
+              p
+                span.fw-bolder.text-info ✓
+                |
+                | В ванной комнате Вы сможете найти гель для душа, шампунь, зубные наборыдля каждого гостя, ватные диски и ватные палочки.
+            li
+              p
+                span.fw-bolder.text-warning ✓
+                |
+                | Так же в квартире имеется гардеробная со множеством полок для удобногохранения Ваших вещей, стиральная машина с парой капсул для стирки, сушилкадля белья, гладильная доска, утюг и фен.
+            li
+              p
+                span.fw-bolder.text-danger ✓
+                |
+                | Рядом с домом Вы можете прогуляться по набережной.
+            li
+              p
+                span.fw-bolder.text-muted ✓
+                |
+                | Отличная транспортная развязка удобно добираться до центра города, налевый берег, в сторону Академгородка и г.Бердска.
+            li
+              p
+                span.fw-bolder.text-dark ✓
+                |
+                | Бесплатная парковка на территории микрорайона.
+            li
+              p
+                span.fw-bolder.text-secondary ✓
+                |
+                | На районе множество кафе, кофеен и ресторанов.
+            li
+              p
+                span.fw-bolder.text-light.bg-dark ✓
+                |
+                | Круглосуточный гипермаркет Лента в 300 метрах от дома.
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Удобства:
+        .col-12.col-lg-10(style="text-align: justify;")
+          ul(style="list-style-type: none")
+            li
+              i.bi.bi-wifi(style="font-size: 2rem")
+              |
+              | Wi-Fi
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Условия:
+        .col-12.col-lg-10(style="text-align: justify;")
+          p Заезд: с 14:00&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Выезд: до 12:00
+          a(href='#') Ознакомьтесь с Правилами проживания
+        hr
+      .row
+        .col-11.mx-auto.my-3
+          #map(style="width: 100%; height: 400px")
+
+block append footer
+  script
+    include ../../../src/js/map.js
