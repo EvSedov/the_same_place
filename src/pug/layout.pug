@@ -4,13 +4,15 @@ block variables
 
 doctype html
 html(lang="en")
-  block head
-    include ../../src/blocks/head/_head
+  head
+    block head
+      include ../../src/blocks/head/_head
     
   body
     block header
 
     block main
 
-    block footer
-      include ../../src/blocks/footer/_footer
+    footer
+      block footer
+        include ../../src/blocks/footer/_footer

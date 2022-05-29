@@ -1,6 +1,13 @@
+const path = require('path');
+const glob = require('glob');
+
+const PATHS = {
+  src: path.join(__dirname, 'src')
+};
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 let mode = (process.env.NODE_ENV === 'production') ? 'production' : 'development';
 
@@ -53,7 +60,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/rules.pug',
       filename: 'rules.html'
-    })
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+    }),
   ],
   module: {
     rules: [
