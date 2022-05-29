@@ -1,17 +1,18 @@
 extends ../layout
 
 block append head
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_1.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_2.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_3.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_4.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_5.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_6.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_7.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_8.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_9.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_01.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_02.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_03.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_04.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_05.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_06.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_07.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_08.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_09.jpg"))
   link(rel="preload", as="image", href=require("../../../src/images/DSC_10.jpg"))
   link(rel="preload", as="image", href=require("../../../src/images/DSC_11.jpg"))
+  link(rel="preload", as="image", href=require("../../../src/images/DSC_12.jpg"))
   script(src="https://api-maps.yandex.ru/2.1/?apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU" type="text/javascript")
 
 
@@ -48,7 +49,38 @@ block main
         hr
       .row 
         .col-12.col-lg-2
-          h5 Параметры:
+          h5 Локация:
+        .col-12.col-lg-10 
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Рядом с домом Вы можете прогуляться по набережной.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Отличная транспортная развязка. Удобно добираться до центра города, на левый берег, в сторону Академгородка и г.&nbsp;Бердска.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Бесплатная парковка на территории микрорайона.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | На районе множество кафе, кофеен и ресторанов.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Круглосуточный гипермаркет "Лента" в 300 метрах от дома.
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Параметры квартиры:
         .col-12.col-lg-10 
           ul(style="list-style-type: none")
             li ✓ Вместимость: 2+1
@@ -61,7 +93,7 @@ block main
         .col-12.col-lg-10(style="text-align: justify;")
           ul(style="list-style-type: none")
             li
-              p.fw-bolder Уютная и комфортная квартира в микрорайоне Европейский берег&nbsp;&nbsp;- один из самый развитых микрорайонов города с собственной инфраструктурой инабережной. Идеально подходит, как для рабочих поездок, так и романтическихпутешествий.
+              p.fw-bolder Уютная и комфортная квартира в микрорайоне Европейский берег&nbsp;&nbsp;- один из самый развитых микрорайонов города с собственной инфраструктурой инабережной. Идеально подходит, как для рабочих поездок, так и романтических путешествий.
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
@@ -82,31 +114,6 @@ block main
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Так же в квартире имеется гардеробная со множеством полок для удобного хранения Ваших вещей, стиральная машина с парой капсул для стирки, сушилка для белья, гладильная доска, утюг и фен.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Рядом с домом Вы можете прогуляться по набережной.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Отличная транспортная развязка. Удобно добираться до центра города, на левый берег, в сторону Академгородка и г.&nbsp;&nbsp;Бердска.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Бесплатная парковка на территории микрорайона.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | На районе множество кафе, кофеен и ресторанов.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Круглосуточный гипермаркет Лента в 300 метрах от дома.
         hr
       .row 
         .col-12.col-md-2
@@ -151,7 +158,7 @@ block main
           h5 Условия:
         .col-12.col-lg-10(style="text-align: justify;")
           p Заезд: с 14:00&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Выезд: до 12:00
-          a.btn.btn-outline-info.my-3(href='#') Ознакомьтесь с Правилами проживания
+          a.btn.btn-outline-info.border-2.my-3.text-dark(href='./rules.html') Ознакомьтесь с Правилами проживания
         hr
       .row
         .col-11.mx-auto.my-3

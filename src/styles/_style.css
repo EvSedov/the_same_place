@@ -113,3 +113,15 @@ h3 {
 .social-text {
   color: #8B511D !important;
 }
+
+.btn-tel {
+  background-color: rgb(25, 135, 84) !important;
+  color: white !important;
+}
+
+.btn-tel:hover,
+.btn-tel:active {
+  background-color: white !important;
+  color: rgb(25, 135, 84) !important;
+  /* border: 2px solid rgb(25, 135, 84); */
+}
