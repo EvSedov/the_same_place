@@ -1,7 +1,8 @@
 extends ../layout
 
 block append head
-  script(src="https://api-maps.yandex.ru/2.1/?apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU" type="text/javascript")
+  link(rel="preconnect" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU")
+  link(rel="dns-prefetch" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU")
 
 block header
   +header('Квартиры и апартаменты')
@@ -24,5 +25,6 @@ block main
         .col
           +cardWithBtn('img-fluid rounded-start', 'card-room', 'jpg', 'Европейский берег по-французски', 'Уютная и комфортная квартира в микрорайоне Европейский берег - один из самый развитых микрорайонов города с собственной инфраструктурой и набережной. Идеально подходит, как для рабочих поездок, так и романтических путешествий.', ['Площадь 34 кв.м.', 'Кровати: односпальных 1, больших двуспальных 1.'], 'european-coast-in-french')
 block append footer
+  script(async src="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU&onload=init" type="text/javascript")
   script
     include ../../../src/js/map.js

@@ -13,4 +13,4 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 };
 
-ymaps.ready(init);
+// ymaps.ready(init);

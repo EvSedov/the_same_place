@@ -13,8 +13,8 @@ block append head
   link(rel="preload", as="image", href=require("../../../src/images/DSC_10.jpg"))
   link(rel="preload", as="image", href=require("../../../src/images/DSC_11.jpg"))
   link(rel="preload", as="image", href=require("../../../src/images/DSC_12.jpg"))
-  script(src="https://api-maps.yandex.ru/2.1/?apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU" type="text/javascript")
-
+  link(rel="preconnect" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU")
+  link(rel="dns-prefetch" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU")
 
 block header
   +header('')
@@ -177,5 +177,6 @@ block main
           #map(style="width: 100%; height: 400px")
 
 block append footer
+  script(async src="https://api-maps.yandex.ru/2.1/?apikey=575191be-8a4a-4eb1-a3c1-13ec18f537aa&lang=ru_RU&onload=init" type="text/javascript")
   script
     include ../../../src/js/map.js
