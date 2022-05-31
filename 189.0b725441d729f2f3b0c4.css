@@ -20,6 +20,8 @@ url(assets/7ff3ca6fa798de3f8ac2.woff?08efbba7c53d8c5413793eecb19b20bb) format("w
   -moz-osx-font-smoothing: grayscale;
 }
 .bi-telegram::before { content: "\f5b3"; }
+.bi-tv::before { content: "\f5ed"; }
 .bi-whatsapp::before { content: "\f618"; }
 .bi-wifi::before { content: "\f61c"; }
+.bi-person-workspace::before { content: "\f67a"; }
 
