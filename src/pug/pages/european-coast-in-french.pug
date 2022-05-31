@@ -128,42 +128,42 @@ block main
                 | Так же в квартире имеется гардеробная со множеством полок для удобного хранения Ваших вещей, стиральная машина с парой капсул для стирки, сушилка для белья, гладильная доска, утюг и фен.
         hr
       .row 
-        .col-12.col-md-2
+        .col-12.col-lg-2
           h5 Удобства:
-        .col-6.col-md-3
-          ul(style="list-style-type: none")
-            li
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
               i.bi.bi-wifi(style="font-size: 2rem")
               | &nbsp;&nbsp;&nbsp;Wi-Fi
             li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
+              img(src=require("../../../src/images/kitchen.png"), alt="icons kitchen", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Кухня
             li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
+              img(src=require("../../../src/images/shower.png"), alt="icons shower", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Душ
             li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
+              img(src=require("../../../src/images/dryer.png"), alt="icons dryer", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Фен
+            li.d-flex.align-items-center
+              img(src=require("../../../src/images/washer.png"), alt="icons washer", height="32" width="32")
+              span.ps-3.lh-1 Стиральная машина и сушилка для белья
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              i.bi.bi-tv(style="font-size: 2rem")
+              | &nbsp;&nbsp;&nbsp;Телевизор
+            li.lh-1
+              i.bi.bi-person-workspace(style="font-size: 2rem")
+              | &nbsp;&nbsp;&nbsp;Рабочее место
             li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-        .col-6.col-md-3
-          ul(style="list-style-type: none")
-            li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-            li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-            li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-            li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-            li
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
+              img(src=require("../../../src/images/towels.png"), alt="icons towels", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Полотенца
+            li.d-flex.align-items-center
+              img(src=require("../../../src/images/cream.png"), alt="icons cream", height="32" width="32")
+              span.ps-3.lh-1 Предметы личной гигиены
+            li.d-flex.align-items-center
+              img(src=require("../../../src/images/iron.png"), alt="icons iron", height="32" width="32")
+              span.ps-3.lh-1 Гладильная доска и утюг
         hr
       .row 
         .col-12.col-lg-2
