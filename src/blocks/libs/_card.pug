@@ -4,7 +4,7 @@ mixin card(imgClassName = '', imgName, imgExt, styleName = '', title = '', subTi
       .col-lg-5
         +image(imgClassName, imgName, imgExt)
       .col-lg-7
-        .card-body
+        .card-body.h-100.d-flex.flex-column.justify-content-center.align-items-start
           h2.card-title.fw-bold !{title}
           h3.card-title.fw-bold.my-4= subTitle
           p.card-text.main-text.fs-5.mt-3.fw-normal.lh-sm= text
