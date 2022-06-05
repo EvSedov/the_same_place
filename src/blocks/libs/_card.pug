@@ -1,5 +1,5 @@
-mixin card(imgClassName, imgName, imgExt, title, subTitle, text, subText='')
-  .card.mt-3
+mixin card(imgClassName = '', imgName, imgExt, styleName = '', title = '', subTitle = '', text = '', subText='')
+  .card.mt-3(style = styleName)
     .row.g-0
       .col-lg-5
         +image(imgClassName, imgName, imgExt)

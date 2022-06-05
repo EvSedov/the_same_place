@@ -1,0 +1,6 @@
+mixin cardImgTop(imgClassName = '', imgName, imgExt, styleName = '', title = '', subTitle = '', text = '', subText='')
+  .card.mt-3(style = styleName)
+    .row.g-0
+      +image(imgClassName, imgName, imgExt)
+      .card-body.text-center(style="height: 80px;")
+        h5.card-title.fw-bold !{title}
