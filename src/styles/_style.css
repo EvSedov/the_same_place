@@ -51,10 +51,16 @@ body {
 
 .main-bg {
   height: 100%;
+  min-height: 765px;
+  background-color:#ebe3e3;
   background-image: url('../images/bg-main.jpg');
-  background-position: 50% center;
+  background-position: center left;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.main-bg .container-fluid {
+  background: rgba(240, 245, 250, 0.4);
 }
 
 .logo {
@@ -85,15 +91,6 @@ h3 {
 
 .nav-link {
   font-weight: bold;
-}
-
-.main-content {
-  width: 60%;
-}
-
-.main-text {
-  font-weight: bold;
-  font-size: 16px;
 }
 
 .footer {
