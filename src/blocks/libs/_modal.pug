@@ -1,11 +1,10 @@
-mixin modal(dataBsTarget = '')
-  .modal.fade(id = dataBsTarget data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
-    .modal-dialog
+mixin modal(modalId = '', modalTitle = 'Заголовок модального окна', modalContent = 'Основной текст модального окна')
+  .modal.fade(id = modalId data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+    .modal-dialog.modal-fullscreen-lg-down
       .modal-content
         .modal-header
-          h5#staticBackdropLabel.modal-title Modal title
+          h5#staticBackdropLabel.modal-title= modalTitle
           button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-        .modal-body
-          | ...
+        .modal-body= modalContent
         .modal-footer
           button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Закрыть
