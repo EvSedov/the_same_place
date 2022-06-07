@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "export NODE_ENV=development && webpack serve",
-    "dev": "export NODE_ENV=development && rm -rf dist && webpack",
-    "build": "export NODE_ENV=production && rm -rf dist && webpack",
+    "dev": "export NODE_ENV=development && webpack",
+    "build": "export NODE_ENV=production && webpack",
     "deploy": "npx gh-pages -d dist"
   },
   "repository": {

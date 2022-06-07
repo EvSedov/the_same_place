@@ -1,13 +1,13 @@
 const path = require('path');
-const glob = require('glob');
+// const glob = require('glob');
 
-const PATHS = {
-  src: path.join(__dirname, 'src')
-};
+// const PATHS = {
+//   src: path.join(__dirname, 'src')
+// };
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const PurgecssPlugin = require('purgecss-webpack-plugin');
+// const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 let mode = (process.env.NODE_ENV === 'production') ? 'production' : 'development';
 
@@ -15,8 +15,11 @@ console.log(mode + ' mode');
 
 module.exports = {
   mode: mode,
+  entry: {
+    main: path.resolve(__dirname, './src/index.js'),
+  },
   output: {
-    filename: '[name][contenthash].js',
+    filename: '[name][contenthash].bundle.js',
     assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
@@ -30,8 +33,15 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      chunks: 'all',
-    },
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
+    }
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -61,9 +71,9 @@ module.exports = {
       template: './src/pug/pages/rules.pug',
       filename: 'rules.html'
     }),
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-    }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+    // }),
   ],
   module: {
     rules: [
