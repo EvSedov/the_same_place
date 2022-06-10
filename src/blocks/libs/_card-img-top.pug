@@ -1,7 +1,7 @@
-mixin cardImgTop(imgClassName = '', imgName, imgExt, styleName = '', title = '', dataBsTarget = '')
-  .card.mt-3.position-relative(style = styleName)
+mixin cardImgTop(imgClassName = '', imgName, imgExt, styleForCard = '', styleForTitle = '',title = '', dataBsTarget = '')
+  .card.mt-3.position-relative(style = styleForCard)
     .row.g-0
       +image(imgClassName, imgName, imgExt)
       .card-body.text-center(style="height: 80px;")
-        h6.card-title.m-0.fw-bold !{title}
+        h6.card-title.m-0.fw-bold(style = styleForTitle) !{title}
     a.position-absolute(style="top: 0; bottom: 0; right: 0; left: 0; cursor: pointer;" data-bs-toggle = "modal" data-bs-target = dataBsTarget)

@@ -1,9 +1,9 @@
-mixin modal(modalId = '', imgName, imgExt, title = '', content = '', address = '', telephone = '')
+mixin modal(modalId = '', imgName, imgExt, styleForTitle='', title = '', content = '', address = '', telephone = '')
   .modal.fade(id = modalId data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
     .modal-dialog.modal-lg.modal-fullscreen-lg-down.modal-dialog-scrollable
       .modal-content
         .modal-header
-          h5#staticBackdropLabel.modal-title.text-center !{title}
+          h4#staticBackdropLabel.modal-title.text-center(style = styleForTitle) !{title}
           button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
         .modal-body
           .container-fluid
@@ -11,8 +11,8 @@ mixin modal(modalId = '', imgName, imgExt, title = '', content = '', address = '
               .col-12.d-flex.justify-content-center
                 +image('img-fluid mb-3', imgName, imgExt)
               .col-12
-                p.fs-5(style="text-align: justify;")= content
+                p.fs-6(style="text-align: justify;")= content
                 p.text-muted.fs-4= address
-                p.text-muted.fs-4= telephone
+                p.fs-4= telephone
         .modal-footer
           button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Закрыть
