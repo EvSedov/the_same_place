@@ -45,8 +45,16 @@ body {
   flex: 0 0 auto;
 }
 
+.nav-link {
+  font-weight: bold;
+}
+
 .nav-link:not(:last-child) {
   margin-right: 10px;
+}
+
+.active-link {
+  color: #C9B200 !important;
 }
 
 .main {
@@ -63,17 +71,9 @@ body {
   background-size: cover;
 }
 
-.main-bg .container-fluid {
-  background: rgba(240, 245, 250, 0.4);
-}
-
 .logo {
   width: 115px;
   height: 115px;
-}
-
-.active-link {
-  color: #C9B200 !important;
 }
 
 h1,
@@ -91,10 +91,6 @@ h2,
 h3 {
   font-weight: bold;
   color: #8B511D !important;
-}
-
-.nav-link {
-  font-weight: bold;
 }
 
 .footer {
@@ -124,5 +120,10 @@ h3 {
 .btn-tel:active {
   background-color: white !important;
   color: rgb(25, 135, 84) !important;
-  /* border: 2px solid rgb(25, 135, 84); */
+}
+
+@media screen and (max-width: 560px) {
+  .main-bg .container-fluid {
+    background: rgba(240, 245, 250, 0.4);
+  }
 }
