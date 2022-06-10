@@ -2242,6 +2242,10 @@ body {
   flex: 0 0 auto;
 }
 
+.nav-link:not(:last-child) {
+  margin-right: 10px;
+}
+
 .main {
   flex: 1 1 0;
 }
@@ -2321,4 +2325,4 @@ h3 {
 }
 
 
-/*# sourceMappingURL=styles.14bf228b6eaa74c7b571.css.map*/
+/*# sourceMappingURL=styles.5d2829f247af2e2c7dba.css.map*/
