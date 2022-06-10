@@ -45,6 +45,10 @@ body {
   flex: 0 0 auto;
 }
 
+.nav-link:not(:last-child) {
+  margin-right: 10px;
+}
+
 .main {
   flex: 1 1 0;
 }
