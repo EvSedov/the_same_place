@@ -6,7 +6,7 @@ mixin header(nameForActiveLink='Главная')
           img.logo(src=require('../../../src/images/logo.png') alt='logo' loading='lazy')
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
-        #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end
+        #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-center
           .navbar-nav.text-uppercase.fw-bold
             each key, value in { 'Главная': './index.html', 'Квартиры и апартаменты': './apartments.html', 'Рекомендую посетить': './recommend.html', 'Контакты': './contacts.html' }
               if value == nameForActiveLink
