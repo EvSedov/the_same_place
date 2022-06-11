@@ -123,12 +123,6 @@ block main
       .row
         each values, key in modals
           .col-12.col-lg-6.col-xl-4
-            if key === 'modalId1' || key === 'modalId2' || key === 'modalId3'
-              +cardImgTop('card-img-top', values.imgName, 'jpg', 'width: 100%;', 'color: #8B511D;', values.title, `#${key}`)
-            else
-              +cardImgTop('card-img-top', values.imgName, 'jpg', 'width: 100%;', '', values.title, `#${key}`)
+            +cardImgTop('card-img-top', values.imgName, 'jpg', 'width: 100%;', 'color: #8B511D;', values.title, `#${key}`)
   each values, key in modals
-    if key === 'modalId1' || key === 'modalId2' || key === 'modalId3'
-      +modal(key, values.imgName, 'jpg', 'color: #8B511D;', values.title, values.content, values.address, values.telephone)
-    else
-      +modal(key, values.imgName, 'jpg', '', values.title, values.content, values.address, values.telephone)
+    +modal(key, values.imgName, values.title, values.content, values.address, values.telephone)

@@ -72,8 +72,8 @@ body {
 }
 
 .logo {
-  width: 115px;
-  height: 115px;
+  width: 150px;
+  height: 150px;
 }
 
 h1,
@@ -122,7 +122,7 @@ h3 {
   color: rgb(25, 135, 84) !important;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 500px) {
   .main-bg .container-fluid {
     background: rgba(240, 245, 250, 0.4);
   }
