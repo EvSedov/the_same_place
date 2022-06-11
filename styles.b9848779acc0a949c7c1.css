@@ -2247,7 +2247,7 @@ body {
 }
 
 .nav-link:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .active-link {
@@ -2269,8 +2269,8 @@ body {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 145px;
+  height: 145px;
 }
 
 h1,
@@ -2326,4 +2326,4 @@ h3 {
 }
 
 
-/*# sourceMappingURL=styles.585830dae85a8258771a.css.map*/
+/*# sourceMappingURL=styles.b9848779acc0a949c7c1.css.map*/
