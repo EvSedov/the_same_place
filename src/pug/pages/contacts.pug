@@ -2,7 +2,6 @@ extends ../layout
 
 block variables
   - var indexTitle = "Приветствую!<br /> Меня зовут Ксения.";
-  - var indexSubTitle = '';
   - var indexText = 'Я рада, что Вы выбрали "ТО САМОЕ МЕСТО" для проживания в Новосибирске. Со мной можно связаться следующими способами:'
   - var indexSubText = 'Желаю Вам комфортного проживания и приятного время провождения.'
 
@@ -12,4 +11,4 @@ block main
   main.main
     .container
       .row
-        +card('card-img-top', 'Ksenia', 'jpg', '', indexTitle, indexSubTitle, indexText, indexSubText)
+        +card('card-img-top', 'Ksenia', 'jpg', '', indexTitle, indexText, indexSubText)
