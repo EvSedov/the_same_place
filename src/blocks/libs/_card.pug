@@ -8,6 +8,19 @@ mixin card(imgClassName = '', imgName, imgExt, styleName = '', title = '', subTi
           h2.card-title.fw-bold !{title}
           h3.card-title.fw-bold.my-4= subTitle
           p.card-text.fs-5.mt-3.fw-normal.lh-sm= text
+          .w-100.d-flex.flex-column.flex-sm-row.justify-content-sm-start.align-items-sm-center
+            p.m-0 1. Позвонить
+            a.ms-2.btn.btn-tel.border.border-2.border-success.text-nowrap(role="button", href="tel:+79137400459")
+              | +7 (913) 740-04-59 Ксения
+          .w-100.d-flex.flex-column.flex-sm-row.justify-content-sm-start.align-items-sm-center
+            p.m-0 2. Написать через WhatsApp
+            a.social-link.px-3(href='https://wa.me/79137400459' target='_blank')
+              i.bi.bi-whatsapp(style="font-size: 2rem; color: green")
+          .w-100.d-flex.flex-column.flex-sm-row.justify-content-sm-start.align-items-sm-center
+            p.m-0 3. Написать через Telegram
+            a.social-link.px-3(href='https://t.me/to_samoe_mesto_nsk' target='_blank')
+              i.bi.bi-telegram(style="font-size: 2rem")
+          p 4. Заполнить форму обратной связи.
           //- form.container-fluid#form-feedback
           //-   .mb-3
           //-     label.form-label(for='exampleInputName') Фамилия и имя:
@@ -22,6 +35,7 @@ mixin card(imgClassName = '', imgName, imgExt, styleName = '', title = '', subTi
           //-     label.form-label(for='exampleFormControlTextarea') Сообщение:
           //-     textarea#exampleFormControlTextarea.form-control(rows='3' name='message' placeholder="Ваше сообщение..." required)
           //-   button.btn.btn-primary.mb-3(type='submit') Отправить
-          script(src='https://yastatic.net/s3/frontend/forms/_/embed.js')
-          iframe(src='https://forms.yandex.ru/cloud/62a6f05e77020a5ff8b3fe38/?iframe=1' frameborder='0' name='ya-form-62a6f05e77020a5ff8b3fe38' width='650')
+          script(defer src="https://yastatic.net/s3/frontend/forms/_/embed.js")
+          .container-fluid(style="overflow-x: scroll;")
+            iframe(src="https://forms.yandex.ru/u/62a6f540f000d77275a66952/?iframe=1" frameborder="0" name="ya-form-62a6f540f000d77275a66952" width="500" height="500")
           p.card-text.fs-5.fw-normal.lh-sm= subText
