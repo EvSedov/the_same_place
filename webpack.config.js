@@ -76,9 +76,6 @@ module.exports = {
       template: './src/pug/pages/rules.pug',
       filename: 'rules.html'
     }),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-    // }),
   ],
   module: {
     rules: [
@@ -110,7 +107,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
         type: 'asset/resource',
       },
       {
