@@ -2319,7 +2319,7 @@ h3 {
   color: rgb(25, 135, 84) !important;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .main-bg .container-fluid {
     height: 100% !important;
     background: rgba(240, 245, 250, 0.4);
@@ -2327,4 +2327,4 @@ h3 {
 }
 
 
-/*# sourceMappingURL=styles.6f843cda062b25e5f51a.css.map*/
+/*# sourceMappingURL=styles.e5a69a6019ef8b8257d4.css.map*/
