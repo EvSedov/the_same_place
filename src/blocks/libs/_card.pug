@@ -4,22 +4,18 @@ mixin card(imgClassName = '', imgName, imgExt, styleName = '', title = '', text 
       .col-lg-5
         +image(imgClassName, imgName, imgExt)
       .col-lg-7
-        .card-body.h-100.d-flex.flex-column.justify-content-center.align-items-start
-          h2.card-title.fw-bold !{title}
-          p.card-text.fs-5.mt-3.fw-normal.lh-sm(style="text-align: justify;")= text
-          .w-100.d-flex.flex-column.flex-sm-row.justify-content-sm-start.align-items-sm-center
-            p.m-0 1. Позвонить
-            a.ms-2.btn.btn-tel.border.border-2.border-success.text-nowrap(role="button", href="tel:+79137400459")
-              | +7 (913) 740-04-59 Ксения
-          .w-100.d-flex.flex-column.flex-sm-row.justify-content-sm-start.align-items-sm-center
-            p.m-0 2. Написать через WhatsApp
-            a.social-link.px-3(href='https://wa.me/79137400459' target='_blank')
-              i.bi.bi-whatsapp(style="font-size: 2rem; color: green")
-          .w-100.d-flex.flex-column.flex-sm-row.justify-content-sm-start.align-items-sm-center
-            p.m-0 3. Написать через Telegram
-            a.social-link.px-3(href='https://t.me/to_samoe_mesto_nsk' target='_blank')
-              i.bi.bi-telegram(style="font-size: 2rem")
-          p.m-0 4. Заполнить форму обратной связи.
-          a.btn.btn-outline-info.border-2.my-3.text-dark(href="https://forms.yandex.ru/u/62a6f540f000d77275a66952/" target="_blank")
-            | Нажмите для заполнения формы обратной связи
-          p.card-text.fs-5.fw-normal.lh-sm= subText
+        .card-body.h-100.d-flex.flex-column.justify-content-center.align-items-center
+          h2.card-title.fw-bold.text-center !{title}
+          p.card-text.fs-5.mt-3.fw-normal.lh-sm.text-center= text
+          .mb-3.w-100.d-flex.justify-content-evenly.align-items-center
+            a.social-link(href="tel:+79137400459"  target='_blank')
+              i.bi.bi-telephone-fill(style="font-size: 3rem")
+            a.social-link(href='https://wa.me/79137400459' target='_blank')
+              i.bi.bi-whatsapp(style="font-size: 3rem; color: green")
+            a.social-link(href='https://t.me/to_samoe_mesto_nsk' target='_blank')
+              i.bi.bi-telegram(style="font-size: 3rem")
+          p.w-100.fs-5.m-0.mb-2.text-center Или заполнить форму обратной связи:
+          script(defer src='https://yastatic.net/s3/frontend/forms/_/embed.js')
+          .container-fluid.mb-2.d-flex.justify-content-center.align-items-center
+            iframe(src='https://forms.yandex.ru/cloud/62a6f05e77020a5ff8b3fe38/?iframe=1' frameborder='0' name='ya-form-62a6f05e77020a5ff8b3fe38' width='500')
+          p.card-text.text-center.fs-5.fw-normal.lh-sm= subText
