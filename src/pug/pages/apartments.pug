@@ -25,6 +25,6 @@ block main
         .col
           +cardWithBtn('img-fluid rounded-start', 'card-room', 'jpg', 'Европейский берег по-французски', 'Уютная и комфортная квартира в микрорайоне Европейский берег - один из самый развитых микрорайонов города с собственной инфраструктурой и набережной. Идеально подходит, как для рабочих поездок, так и романтических путешествий.', ['Площадь 34 кв.м.', 'Кровати: односпальных 1, больших двуспальных 1.'], 'european-coast-in-french')
 block append footer
-  script(async src="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
+  script(defer src="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script
     include ../../../src/js/map.js

@@ -94,13 +94,19 @@ module.exports = {
               postcssOptions: {
                 plugins: [
                   [
+                    "cssnano",
                     "postcss-preset-env",
                     {
                       // Options
                     },
+                    "autoprefixer",
+                    {
+                      // Options
+                    }
                   ],
                 ],
               },
+              sourceMap: true,
             },
           },
           'sass-loader',
