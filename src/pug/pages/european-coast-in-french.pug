@@ -1,18 +1,11 @@
 extends ../layout
 
+block append variables
+  - var images = ['card-room', 'DSC_01_01', 'DSC_01_02', 'DSC_01_03', 'DSC_01_04', 'DSC_01_05', 'DSC_01_06', 'DSC_01_07', 'DSC_01_08', 'DSC_01_09', 'DSC_01_10', 'DSC_01_11', 'DSC_01_12']
+
 block append head
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_01.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_02.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_03.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_04.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_05.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_06.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_07.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_08.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_09.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_10.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_11.jpg"))
-  link(rel="preload", as="image", href=require("../../../src/images/DSC_12.jpg"))
+  each img in images
+    link(rel="preload", as="image", href=require(`../../../src/images/${img}.jpg`))
   link(rel="preconnect" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
   link(rel="dns-prefetch" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
 
@@ -28,7 +21,7 @@ block main
         hr
       .row
         .col-12.col-lg-7
-          +carusel()
+          +carusel(images)
         .col-12.col-lg-5.mt-5.mt-lg-0
           h5.text-center Цены при бронировании от двух и более суток
           ul.list-group.list-group-flush
@@ -178,4 +171,4 @@ block main
 block append footer
   script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script
-    include ../../../src/js/map.js
+    include ../../../src/js/map-european-coast.js

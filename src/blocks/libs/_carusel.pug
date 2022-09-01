@@ -1,59 +1,22 @@
-mixin carusel()
+mixin carusel(images)
   #carouselExampleIndicators.carousel.carousel-dark.slide(data-bs-interval="false")
     .carousel-indicators(style="margin-bottom: -20px;")
-      button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1' style="width: 100px;")
-        +image("d-block w-100 img-fluid", 'card-room-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2' style="width: 100px;")
-        +image('d-block w-100 img-fluid', 'DSC_01-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3' style="width: 100px;")
-        +image('d-block w-100 img-fluid', 'DSC_02-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='3' aria-label='Slide 4' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_03-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='4' aria-label='Slide 5' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_04-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='5' aria-label='Slide 6' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_05-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='6' aria-label='Slide 7' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_06-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='7' aria-label='Slide 8' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_07-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='8' aria-label='Slide 9' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_08-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='9' aria-label='Slide 10' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_09-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='10' aria-label='Slide 11' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_10-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='11' aria-label='Slide 12' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_11-icon', 'jpg')
-      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='12' aria-label='Slide 13' style="width: 100px;")
-        +image('d-block w-100 img-fluid','DSC_12-icon', 'jpg')
+      each image, index  in images
+        if index === 0
+          button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to=`${index}` aria-current='true' aria-label=`Slide ${index + 1}` style="width: 100px;")
+            +image("d-block w-100 img-fluid", `${image}-icon`, 'jpg')
+        else
+          button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to=`${index}` aria-label=`Slide ${index + 1}` style="width: 100px;")
+            +image("d-block w-100 img-fluid", `${image}-icon`, 'jpg')
+        
     .carousel-inner
-      .carousel-item.active
-        +image('d-block w-100', 'card-room', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_01', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_02', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_03', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_04', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_05', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_06', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_07', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_08', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_09', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_10', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_11', 'jpg')
-      .carousel-item
-        +image('d-block w-100','DSC_12', 'jpg')
+      each image, index in images
+        if index === 0
+          .carousel-item.active
+            +image('d-block w-100', image, 'jpg')
+        else
+          .carousel-item
+            +image('d-block w-100', image, 'jpg')
     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true' style="width: 3rem; height: 3rem;")
       span.visually-hidden Предыдущий слайд
