@@ -2,15 +2,19 @@ var myMap;
 
 function init() {
   myMap = new ymaps.Map("map", {
-    center: [54.993272, 82.967196],
-    zoom: 16
+    center: [55.025143, 82.928453],
+    zoom: 12
   }, {
     searchControlProvider: 'yandex#search'
   });
-  var myPlacemark = new ymaps.Placemark([54.993272, 82.967196], {}, {
+  var myPlacemark1 = new ymaps.Placemark([54.993272, 82.967196], {}, {
     preset: 'islands#redIcon'
   });
-  myMap.geoObjects.add(myPlacemark);
+  var myPlacemark2 = new ymaps.Placemark([55.040435, 82.964573], {}, {
+    preset: 'islands#redIcon'
+  });
+  myMap.geoObjects.add(myPlacemark1);
+  myMap.geoObjects.add(myPlacemark2);
 };
 
 // ymaps.ready(init);
