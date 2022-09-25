@@ -61,8 +61,8 @@ module.exports = {
       filename: 'contacts.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/apartments.pug',
-      filename: 'apartments.html'
+      template: './src/pug/pages/booking.pug',
+      filename: 'booking.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/recommend.pug',

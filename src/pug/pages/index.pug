@@ -1,20 +1,105 @@
 extends ../layout
 
+block append head
+  link(rel="preconnect" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
+  link(rel="dns-prefetch" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
+
 block header
-  +header('Главная')
+  +header('Квартиры и апартаменты')
+
 block main
-  main.main.main-bg
-    .container-fluid
-      .container
-        .row
-          .col.col-md-9.my-3
-            h1.fw-bold.text-uppercase То самое место
-            h3.fw-bold.my-3
-              | КРАТКОСРОЧНАЯ АРЕНДА 
-              br
-              | КВАРТИР В НОВОСИБИРСКЕ
-            p.fs-5.mt-3.fw-bold.lh-sm(style="text-align: justify;")
-              | Это ТО САМОЕ МЕСТО, где Вы найдете идеальную во всех смыслах
-              | квартиру в Новосибирске. И неважно, для каких целей Вы прибываете
-              | в город, будь то командировка, визит к родственникам или просто
-              | мини-путешествие.
+  main.main
+    .container
+      .row
+        .col.col-md-9.my-3
+          h1.fw-bold.text-uppercase То самое место
+          h3.fw-bold.my-3
+            | КРАТКОСРОЧНАЯ АРЕНДА 
+            br
+            | КВАРТИР В НОВОСИБИРСКЕ
+          p.fs-5.mt-3.fw-bold.lh-sm(style="text-align: justify;")
+            | Это ТО САМОЕ МЕСТО, где Вы найдете идеальную во всех смыслах
+            | квартиру в Новосибирске. И неважно, для каких целей Вы прибываете
+            | в город, будь то командировка, визит к родственникам или просто
+            | мини-путешествие.
+      .row
+        .col
+          h4.mt-4 Посмотреть списком
+          hr
+      .row
+        .col
+          +cardWithBtn('img-fluid rounded-start', 'card-room', 'jpg', 'Европейский берег по-французски', 'Уютная и комфортная квартира в микрорайоне "Европейский берег" - одном из самых развитых микрорайонов города с собственной инфраструктурой и набережной. Идеально подходит, как для рабочих поездок, так и романтических путешествий.', ['Площадь 34 кв.м.', 'Кровати: односпальных 1, больших двуспальных 1.'], 'european-coast-in-french')
+      .row
+        .col
+          +cardWithBtn('img-fluid rounded-start', 'DSC_02_01', 'jpg', 'ТО САМОЕ МЕСТО В ЖК ПИФАГОР', 'Современная и уютная квартира-студия в новом жилом комплексе "ПИФАГОР" для двоих.', ['Площадь 25 кв.м.', 'Кровати: 1 двуспальный диван.'], 'pythagoras')
+      .row
+        .col
+          h4.mt-4 Основные вопросы
+          hr
+          #accordionFlushExample.accordion.accordion-flush
+            .accordion-item
+              h2#flush-headingOne.accordion-header
+                button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                  | Вопрос #1
+              #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+                .accordion-body
+                  | Ответ на первый вопрос.
+            .accordion-item
+              h2#flush-headingTwo.accordion-header
+                button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                  | Вопрос #2
+              #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+                .accordion-body
+                  | Ответ на второй вопрос.
+            .accordion-item
+              h2#flush-headingThree.accordion-header
+                button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                  | Вопрос #3
+              #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+                .accordion-body
+                  | Ответ на третий вопрос.
+      .row
+        .col
+          h4.mt-4.text-center Правила проживания
+          hr
+          h6.text-center Время заезда с 14:00&nbsp;&nbsp;|&nbsp;&nbsp;Время выезда до 12:00
+          ol.list-group.list-group-numbered.list-group-flush
+            li.list-group-item 
+              | Цена указана на 1-2 человека (спальное место - двуспальная кровать), за третьего человека или дополнительный комплект белья 
+              |
+              span.fw-bold доплата 800 рублей
+              | .
+            li.list-group-item Заселение в апартаменты возможно только для лиц старше 18 лет при предъявлении паспорта и заключении договора.
+            li.list-group-item При заезде вам необходимо иметь с собой, помимо документа, удостоверяющего личность, полную оплату за аренду квартиры или апартаментов, а также залоговую сумму в размере 2000 рублей. Документ в залог не принимается.
+            li.list-group-item 
+              | Необходимо соблюдать законодательство РФ, уважать соседей и
+              |
+              span.fw-bold не шуметь с 22.00 до 08.00 часов
+              |
+              | .
+            li.list-group-item
+              | Курение в квартирах и апартаментах запрещено&nbsp;-
+              |
+              span.fw-bold ШТРАФ 10 000 рублей.
+            li.list-group-item Квартиры и апартаменты сдаются исключительно для проживания лиц, указанных в договоре. Вечеринки, распитие спиртных напитков, употребление запрещенных законодательством РФ препаратов, проживание с животными, а также оказание каких-либо услуг населению в апартаментах категорически запрещены! В случае выявления данных нарушений - выселение без возврата стоимости проживания, а также залоговой суммы.
+            li.list-group-item Скидки предоставляются только при условии оплаты за долгий срок проживания единовременно. При оплате частями скидки не предоставляются.
+            li.list-group-item 
+              | При длительном проживании смена белья и влажная уборка осуществляются раз в 7 дней
+              span.fs-4.fw-bold *
+              |
+              | по предварительной договоренности.
+              .fw-bolder.mt-2
+                p.lh-1
+                  span.fs-4.fw-bold *
+                  small.text-muted обращаем внимание, что накопленная посуда складывается в раковину для освобождения и протирания поверхностей, мытье посуды в уборку не включено. При проживании менее 7 дней или по необходимости Вы можете запросить за дополнительную плату: уборка со сменой белья – 1400 рублей; уборка без смены белья – 800 рублей.
+      .row
+        .col
+          h4.mt-4 Посмотреть на карте
+          hr
+      .row
+        .col 
+          #map(style="width: 100%; height: 400px")
+block append footer
+  script(defer src="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
+  script
+    include ../../../src/js/map.js
