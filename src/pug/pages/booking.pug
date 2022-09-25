@@ -1,20 +1,41 @@
-extends ../layout
+include ../../blocks/libs/_libs
 
-block header
-  +header('Главная')
-block main
-  main.main.main-bg
-    .container-fluid
-      .container
-        .row
-          .col.col-md-9.my-3
-            h1.fw-bold.text-uppercase То самое место
-            h3.fw-bold.my-3
-              | КРАТКОСРОЧНАЯ АРЕНДА 
-              br
-              | КВАРТИР В НОВОСИБИРСКЕ
-            p.fs-5.mt-3.fw-bold.lh-sm(style="text-align: justify;")
-              | Это ТО САМОЕ МЕСТО, где Вы найдете идеальную во всех смыслах
-              | квартиру в Новосибирске. И неважно, для каких целей Вы прибываете
-              | в город, будь то командировка, визит к родственникам или просто
-              | мини-путешествие.
+doctype html
+html(lang="en")
+  head
+    block head
+      include ../../../src/blocks/head/_head
+
+  body
+
+    // Yandex.Metrika counter
+    script(type='text/javascript').
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      
+      ym(89308319, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/89308319' style='position:absolute; left:-9999px;' alt='')
+    // /Yandex.Metrika counter
+    
+    header
+      +header('Забронировать')  
+
+    main.main.main-bg
+      .container-fluid
+        .container
+          .row
+            .col
+              h1.ms-3.fw-bold.text-uppercase То самое место
+              p.ms-3.fs-5.color-brown
+                | КРАТКОСРОЧНАЯ АРЕНДА КВАРТИР В НОВОСИБИРСКЕ
+              <script src="https://realtycalendar.ru/webpack/application.js?_t=33171116968a955827c5"></script>
+              <div class="mx-0 px-0" id="rc-bookings-widget-root"></div>
+              <script type="text/javascript">RC_BOOKINGS_WIDGET.init('86027d4c167972d80fe006fc433a3270');</script>
