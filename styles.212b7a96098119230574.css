@@ -2432,8 +2432,8 @@ body {
 .main-bg {
   height: 100%;
   min-height: 765px;
-  background-color:#ebe3e3;
-  background-image: url(assets/1559f85e8f3213780cbc.jpg);
+  /* background-color:#ebe3e3; */
+  /* background-image: url('../images/bg-main.jpg'); */
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2456,7 +2456,8 @@ h6,
 
 h1,
 h2,
-h3 {
+h3,
+.color-brown {
   font-weight: bold;
   color: #8B511D !important;
 }
@@ -2498,4 +2499,4 @@ h3 {
 } */
 
 
-/*# sourceMappingURL=styles.b98b1098f56271818ebf.css.map*/
+/*# sourceMappingURL=styles.212b7a96098119230574.css.map*/
