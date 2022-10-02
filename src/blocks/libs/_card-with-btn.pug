@@ -1,8 +1,8 @@
-mixin cardWithBtn(imgClassName, imgName, imgExt, cardTitle, cardText, arrSmallCardText, btnLink)
+mixin cardWithBtn(idForImg, imgClassName, imageName, imgExt, cardTitle, cardText, arrSmallCardText, btnLink)
   .card.mb-5
     .row.g-0.d-flex.flex-column.flex-lg-row
       .col.col-lg-4
-        +image(imgClassName, imgName, imgExt)
+        +image(idForImg, imgClassName, imageName, imgExt)
       .col.col-lg-6
         .card-body
           h5.card-title.fw-bold.text-center.text-lg-start= cardTitle
@@ -13,5 +13,7 @@ mixin cardWithBtn(imgClassName, imgName, imgExt, cardTitle, cardText, arrSmallCa
       .col.col-lg-2.mt-lg-5.mb-3
         p.card-text.text-center.m-0.mt-4 от
         h5.card-title.text-center.fw-bold 2200 руб.
-        .d-flex.justify-content-center.mt-4
-          a.btn.btn-outline-secondary.border-3.rounded-pill(href=`${btnLink}.html`) Подробнее
+        .d-flex.justify-content-center.mt-4.mb-2
+          a.px-4.btn.btn-outline-secondary.border-3.rounded-pill(href=`${btnLink}.html`) Подробнее
+        .d-flex.justify-content-center
+          a.btn.btn-outline-danger.border-3(href='#booking') Забронировать

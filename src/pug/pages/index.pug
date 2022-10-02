@@ -28,10 +28,10 @@ block main
           hr
       .row
         .col
-          +cardWithBtn('img-fluid rounded-start', 'card-room', 'jpg', 'Европейский берег по-французски', 'Уютная и комфортная квартира в микрорайоне "Европейский берег" - одном из самых развитых микрорайонов города с собственной инфраструктурой и набережной. Идеально подходит, как для рабочих поездок, так и романтических путешествий.', ['Площадь 34 кв.м.', 'Кровати: односпальных 1, больших двуспальных 1.'], 'european-coast-in-french')
+          +cardWithBtn('img-european-coast', 'img-fluid rounded-start', 'card-room', 'jpg', 'Европейский берег по-французски', 'Уютная и комфортная квартира в микрорайоне "Европейский берег" - одном из самых развитых микрорайонов города с собственной инфраструктурой и набережной. Идеально подходит, как для рабочих поездок, так и романтических путешествий.', ['Площадь 34 кв.м.', 'Кровати: односпальных 1, больших двуспальных 1.'], 'european-coast-in-french')
       .row
         .col
-          +cardWithBtn('img-fluid rounded-start', 'DSC_02_01', 'jpg', 'ТО САМОЕ МЕСТО В ЖК ПИФАГОР', 'Современная и уютная квартира-студия в новом жилом комплексе "ПИФАГОР" для двоих.', ['Площадь 25 кв.м.', 'Кровати: 1 двуспальный диван.'], 'pythagoras')
+          +cardWithBtn('img-pythagoras', 'img-fluid rounded-start', 'DSC_02_01', 'jpg', 'ТО САМОЕ МЕСТО В ЖК ПИФАГОР', 'Современная и уютная квартира-студия в новом жилом комплексе "ПИФАГОР" для двоих.', ['Площадь 25 кв.м.', 'Кровати: 1 двуспальный диван.'], 'pythagoras')
       .row
         .col
           h4.mt-4 Частозадаваемые вопросы
@@ -62,7 +62,8 @@ block main
         .col
           h4.mt-4 Правила проживания
           hr
-          a.btn.btn-outline-info.btn-lg.border-2.my-3.text-dark(href='./rules.html') Ознакомьтесь с Правилами проживания
+          .d-grid
+            a.btn.btn-outline-info.btn-lg.border-2.my-3.color-brown.fw-bold(type="button" href='./rules.html') Ознакомьтесь с Правилами проживания
           //- ol.list-group.list-group-numbered.list-group-flush
           //-   li.list-group-item Заселение в апартаменты возможно только для лиц старше 18 лет при предъявлении паспорта и заключении договора.
           //-   li.list-group-item При заезде вам необходимо иметь с собой, помимо документа, удостоверяющего личность, полную оплату за аренду квартиры или апартаментов, а также залоговую сумму в размере 2000 рублей. Документ в залог не принимается.
@@ -94,6 +95,11 @@ block main
       .row
         .col 
           #map(style="width: 100%; height: 400px")
+      .row#booking
+        .col
+          <script src="https://realtycalendar.ru/webpack/search.js?_t=33171116968a955827c5"></script>
+          <div id="rc-small-bookings-widget-root"></div>
+          <script type="text/javascript">RC_SMALL_BOOKINGS_WIDGET.init('86027d4c167972d80fe006fc433a3270');</script>
 block append footer
   script(defer src="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script

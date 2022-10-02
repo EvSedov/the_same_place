@@ -1,8 +1,8 @@
-mixin card(imgClassName = '', imgName, imgExt, styleName = '', title = '', text = '', subText='')
+mixin card(idForImg, imgClassName = '', imgName, imgExt, styleName = '', title = '', text = '', subText='')
   .card.mt-3(style = styleName)
     .row.g-0
       .col-lg-5
-        +image(imgClassName, imgName, imgExt)
+        +image(idForImg, imgClassName, imgName, imgExt)
       .col-lg-7
         .card-body.h-100.d-flex.flex-column.justify-content-center.align-items-center
           h2.card-title.fw-bold.text-center !{title}
