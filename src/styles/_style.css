@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.ttf");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Comfortaa";
   src: url("../fonts/Comfortaa-Bold.ttf");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -25,7 +25,39 @@
 @font-face {
   font-family: "Comfortaa";
   src: url("../fonts/Comfortaa-Regular.ttf");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans Bold";
+  src: url("../fonts/Gill\ Sans\ Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans Medium";
+  src: url("../fonts/Gill\ Sans\ Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill\ Sans.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url("../fonts/Gill\ Sans\ Light.otf") format("otf");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -38,6 +70,14 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1px;
+}
+
+.contacts h2 {
+  font-family: "Gill Sans Bold", sans-serif !important;
+}
+
+.contacts p {
+  font-family: "Gill Sans", sans-serif !important;
 }
 
 .header,
@@ -64,8 +104,6 @@ body {
 .main-bg {
   height: 100%;
   min-height: 765px;
-  /* background-color:#ebe3e3; */
-  /* background-image: url('../images/bg-main.jpg'); */
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,6 +157,14 @@ h3,
 .btn-tel {
   background-color: rgb(25, 135, 84) !important;
   color: white !important;
+}
+
+.btn-brown {
+  border-color: #8B511D !important;
+}
+
+.btn-brown:hover {
+  background-color: #8B511D !important;
 }
 
 .btn-tel:hover,

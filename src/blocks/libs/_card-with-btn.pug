@@ -1,4 +1,4 @@
-mixin cardWithBtn(idForImg, imgClassName, imageName, imgExt, cardTitle, cardText, arrSmallCardText, btnLink)
+mixin cardWithBtn(idForImg, imgClassName, imageName, imgExt, cardTitle, cardText, cardAddress, arrSmallCardText, btnLink)
   .card.mb-5
     .row.g-0.d-flex.flex-column.flex-lg-row
       .col.col-lg-4
@@ -7,6 +7,7 @@ mixin cardWithBtn(idForImg, imgClassName, imageName, imgExt, cardTitle, cardText
         .card-body
           h5.card-title.fw-bold.text-center.text-lg-start= cardTitle
           p.card-text.fw-bolder.text-center.text-lg-start= cardText
+          p.card-text.fw-bolder.text-center.text-lg-start= cardAddress
           each value in arrSmallCardText
             p.card-text.m-0.text-center.text-lg-start
               small.text-muted.fw-bolder= value
@@ -14,6 +15,6 @@ mixin cardWithBtn(idForImg, imgClassName, imageName, imgExt, cardTitle, cardText
         p.card-text.text-center.m-0.mt-4 от
         h5.card-title.text-center.fw-bold 2200 руб.
         .d-flex.justify-content-center.mt-4.mb-2
-          a.btn.btn-outline-secondary.border-3.btn-card(href=`${btnLink}.html`) Подробнее
+          a.btn.btn-outline-secondary.border-3.btn-card.btn-brown(href=`${btnLink}.html`) Подробнее
         .d-flex.justify-content-center
           a.btn.btn-outline-danger.border-3.btn-card(href='../../../booking.html') Забронировать
