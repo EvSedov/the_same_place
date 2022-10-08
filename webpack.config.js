@@ -57,8 +57,8 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/contacts.pug',
-      filename: 'contacts.html'
+      template: './src/pug/pages/about.pug',
+      filename: 'about.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/booking.pug',

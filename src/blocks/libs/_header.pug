@@ -8,7 +8,7 @@ mixin header(nameForActiveLink='Главная')
           span.navbar-toggler-icon
         #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-center
           .navbar-nav.text-uppercase.fw-bold
-            each key, value in { 'Квартиры и апартаменты': './index.html', 'Забронировать': './booking.html', 'Рекомендуем посетить': './recommend.html', 'Контакты': './contacts.html' }
+            each key, value in { 'Квартиры и апартаменты': './index.html', 'Забронировать': './booking.html', 'Рекомендуем посетить': './recommend.html', 'Обо мне': './about.html' }
               if value == nameForActiveLink
                 a.nav-link.active-link(aria-current='page' href=key)= value
               else
