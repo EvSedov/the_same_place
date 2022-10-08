@@ -6,7 +6,10 @@ const imgPythagoras = document.getElementById('img-pythagoras');
 
 setInterval(() => {
   const randomSrcEuropeanCoast = imagesForEuropeanCoast[Math.floor(Math.random() * imagesForEuropeanCoast.length)];
-  const randomSrcPythagoras = imagesForPythagoras[Math.floor(Math.random() * imagesForPythagoras.length)];
   imgEuropeanCoast.src = `../../../images/${randomSrcEuropeanCoast}.jpg`;
+}, 7000);
+
+setInterval(() => {
+  const randomSrcPythagoras = imagesForPythagoras[Math.floor(Math.random() * imagesForPythagoras.length)];
   imgPythagoras.src = `../../../images/${randomSrcPythagoras}.jpg`;
 }, 7000);
