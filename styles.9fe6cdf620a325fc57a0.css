@@ -2368,32 +2368,64 @@ url(assets/e559bf06bc84fd9525e6.woff?8d200481aa7f02a2d63a331fc782cfaf) format("w
 
 @font-face {
   font-family: "Montserrat";
-  src: url(assets/04af9a9e62bb4c47bd55.ttf);
-  font-weight: bold;
+  src: url(assets/1f62be1da50480f1ad85.woff2) format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url(assets/e2530ce50f6cc45f2830.ttf);
-  font-weight: bold;
+  src: url(assets/03bdde05039a604d0068.woff2) format("woff2");
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Comfortaa";
-  src: url(assets/dab2a1458c987d812076.ttf);
-  font-weight: bold;
+  src: url(assets/869397e8ef4d483a64df.woff2) format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Comfortaa";
-  src: url(assets/d8756404994c153f8fce.ttf);
-  font-weight: normal;
+  src: url(assets/4a004c44a593bd2bf39b.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans Bold";
+  src: url(assets/edc57c046996f1259c42.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans Medium";
+  src: url(assets/5b195d0a4fc78de3668a.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url(assets/c6b2fbd690f12ede73fc.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url(assets/00dfcac6035c767c9a9c.woff2) format("woff2");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -2406,6 +2438,14 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1px;
+}
+
+.about h2 {
+  font-family: "Gill Sans Bold", sans-serif !important;
+}
+
+.about p {
+  font-family: "Gill Sans", sans-serif !important;
 }
 
 .header,
@@ -2432,8 +2472,6 @@ body {
 .main-bg {
   height: 100%;
   min-height: 765px;
-  /* background-color:#ebe3e3; */
-  /* background-image: url('../images/bg-main.jpg'); */
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2480,9 +2518,21 @@ h3,
   color: #8B511D !important;
 }
 
+.btn-card {
+  width: 173px !important;
+}
+
 .btn-tel {
   background-color: rgb(25, 135, 84) !important;
   color: white !important;
+}
+
+.btn-brown {
+  border-color: #8B511D !important;
+}
+
+.btn-brown:hover {
+  background-color: #8B511D !important;
 }
 
 .btn-tel:hover,
@@ -2499,4 +2549,4 @@ h3,
 } */
 
 
-/*# sourceMappingURL=styles.212b7a96098119230574.css.map*/
+/*# sourceMappingURL=styles.9fe6cdf620a325fc57a0.css.map*/
