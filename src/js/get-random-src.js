@@ -7,6 +7,6 @@ const imgPythagoras = document.getElementById('img-pythagoras');
 setInterval(() => {
   const randomSrcEuropeanCoast = imagesForEuropeanCoast[Math.floor(Math.random() * imagesForEuropeanCoast.length)];
   const randomSrcPythagoras = imagesForPythagoras[Math.floor(Math.random() * imagesForPythagoras.length)];
-  imgEuropeanCoast.src = `../../../src/images/${randomSrcEuropeanCoast}.jpg`;
-  imgPythagoras.src = `../../../src/images/${randomSrcPythagoras}.jpg`;
-}, 5000);
+  imgEuropeanCoast.src = `../../../images/${randomSrcEuropeanCoast}.jpg`;
+  imgPythagoras.src = `../../../images/${randomSrcPythagoras}.jpg`;
+}, 7000);

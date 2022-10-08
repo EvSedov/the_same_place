@@ -1,3 +1,3 @@
 import './styles/index.scss';
 import 'bootstrap';
-import './js/form.js'
+import './js/get-random-src.js';
