@@ -112,6 +112,10 @@ h3,
   color: #8B511D !important;
 }
 
+.btn-card {
+  width: 173px !important;
+}
+
 .btn-tel {
   background-color: rgb(25, 135, 84) !important;
   color: white !important;

@@ -21,7 +21,7 @@ block main
         hr
       .row
         .col-12.col-lg-7
-          +carusel(images)
+          +carusel('', images)
         .col-12.col-lg-5.mt-5.mt-lg-0
           h5.text-center Цены при бронировании от двух и более суток
           ul.list-group.list-group-flush
@@ -226,11 +226,6 @@ block main
       .row
         .col-11.mx-auto.my-3
           #map(style="width: 100%; height: 400px")
-      .row#booking
-        .col
-          <script src="https://realtycalendar.ru/webpack/search.js?_t=33171116968a955827c5"></script>
-          <div id="rc-small-bookings-widget-root"></div>
-          <script type="text/javascript">RC_SMALL_BOOKINGS_WIDGET.init('86027d4c167972d80fe006fc433a3270');</script>
 block append footer
   script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script

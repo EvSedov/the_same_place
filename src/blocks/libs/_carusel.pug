@@ -1,5 +1,5 @@
-mixin carusel(images)
-  #carouselExampleIndicators.carousel.carousel-dark.slide(data-bs-interval="false")
+mixin carusel(idForImg, images)
+  #carouselExampleIndicators.carousel.carousel-dark.slide(data-bs-ride="carusel")
     .carousel-indicators(style="margin-bottom: -20px;")
       each image, index  in images
         if index === 0

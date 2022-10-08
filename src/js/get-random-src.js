@@ -4,12 +4,16 @@ const imagesForPythagoras = ['DSC_02_01', 'DSC_02_02', 'DSC_02_03', 'DSC_02_04',
 const imgEuropeanCoast = document.getElementById('img-european-coast');
 const imgPythagoras = document.getElementById('img-pythagoras');
 
-setInterval(() => {
-  const randomSrcEuropeanCoast = imagesForEuropeanCoast[Math.floor(Math.random() * imagesForEuropeanCoast.length)];
-  imgEuropeanCoast.src = `../../../images/${randomSrcEuropeanCoast}.jpg`;
-}, 7000);
+if (imgEuropeanCoast.id) {
+  setInterval(() => {
+    const randomSrcEuropeanCoast = imagesForEuropeanCoast[Math.floor(Math.random() * imagesForEuropeanCoast.length)];
+    imgEuropeanCoast.src = `../../../images/${randomSrcEuropeanCoast}.jpg`;
+  }, 7000);
+}
 
-setInterval(() => {
-  const randomSrcPythagoras = imagesForPythagoras[Math.floor(Math.random() * imagesForPythagoras.length)];
-  imgPythagoras.src = `../../../images/${randomSrcPythagoras}.jpg`;
-}, 7000);
+if (imgPythagoras.id) {
+  setInterval(() => {
+    const randomSrcPythagoras = imagesForPythagoras[Math.floor(Math.random() * imagesForPythagoras.length)];
+    imgPythagoras.src = `../../../images/${randomSrcPythagoras}.jpg`;
+  }, 7000);
+}
