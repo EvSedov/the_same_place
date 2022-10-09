@@ -7,13 +7,13 @@ const imgPythagoras = document.getElementById('img-pythagoras');
 if (imgEuropeanCoast.id) {
   setInterval(() => {
     const randomSrcEuropeanCoast = imagesForEuropeanCoast[Math.floor(Math.random() * imagesForEuropeanCoast.length)];
-    imgEuropeanCoast.src = `../../../images/${randomSrcEuropeanCoast}.jpg`;
+    imgEuropeanCoast.src = require('../images/' + randomSrcEuropeanCoast + '.jpg');
   }, 7000);
 }
 
 if (imgPythagoras.id) {
   setInterval(() => {
     const randomSrcPythagoras = imagesForPythagoras[Math.floor(Math.random() * imagesForPythagoras.length)];
-    imgPythagoras.src = `../../../images/${randomSrcPythagoras}.jpg`;
+    imgPythagoras.src = require('../images/' + randomSrcPythagoras + '.jpg');
   }, 7000);
 }
