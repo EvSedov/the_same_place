@@ -1,18 +1,7 @@
 const path = require('path');
-// const glob = require('glob');
-
-// const PATHS = {
-//   src: path.join(__dirname, 'src')
-// };
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-// PurgecssPlugin удаляет какие-то стили или атрибуты в тегах
-// после удаления которых перестает работать js код в навигации
-// и модальных окнах bootstrap
-
-// const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 let mode = (process.env.NODE_ENV === 'production') ? 'production' : 'development';
 
