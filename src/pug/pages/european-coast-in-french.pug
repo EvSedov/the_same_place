@@ -5,7 +5,7 @@ block append variables
 
 block append head
   each img in images
-    link(rel="preload", as="image", href=require(`../../../src/images/${img}.jpg`))
+    link(rel="preload", as="image", href=require(`../../images/${img}.jpg`))
   link(rel="preconnect" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
   link(rel="dns-prefetch" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
 
@@ -120,33 +120,33 @@ block main
               i.bi.bi-wifi(style="font-size: 2rem")
               | &nbsp;&nbsp;&nbsp;Wi-Fi
             li
-              img(src=require("../../../src/images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
+              img(src=require("../../images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
               | &nbsp;&nbsp;&nbsp;Кухня
             li
-              img(src=require("../../../src/images/shower.svg"), alt="icons shower", height="32" width="32")
+              img(src=require("../../images/shower.svg"), alt="icons shower", height="32" width="32")
               | &nbsp;&nbsp;&nbsp;Душ
             li
-              img(src=require("../../../src/images/dryer.svg"), alt="icons dryer", height="32" width="32")
+              img(src=require("../../images/dryer.svg"), alt="icons dryer", height="32" width="32")
               | &nbsp;&nbsp;&nbsp;Фен
             li.d-flex.align-items-center
-              img(src=require("../../../src/images/washer.svg"), alt="icons washer", height="32" width="32")
+              img(src=require("../../images/washer.svg"), alt="icons washer", height="32" width="32")
               span.ps-3.lh-1 Стиральная машина и сушилка для белья
         .col-12.col-md-6.col-lg-5
           ul.d-grid.gap-3(style="list-style-type: none")
             li.lh-1
-              img(src=require("../../../src/images/tv.svg"), alt="icons tv", height="32" width="32")
+              img(src=require("../../images/tv.svg"), alt="icons tv", height="32" width="32")
               span.ps-3.lh-1 Телевизор
             li.lh-1
-              img(src=require("../../../src/images/workspace.svg"), alt="icons workspace", height="32" width="32")
+              img(src=require("../../images/workspace.svg"), alt="icons workspace", height="32" width="32")
               span.ps-3.lh-1 Рабочее место
             li
-              img(src=require("../../../src/images/towels.svg"), alt="icons towels", height="32" width="32")
+              img(src=require("../../images/towels.svg"), alt="icons towels", height="32" width="32")
               | &nbsp;&nbsp;&nbsp;Полотенца
             li.d-flex.align-items-center
-              img(src=require("../../../src/images/cream.svg"), alt="icons cream", height="32" width="32")
+              img(src=require("../../images/cream.svg"), alt="icons cream", height="32" width="32")
               span.ps-3.lh-1 Предметы личной гигиены
             li.d-flex.align-items-center
-              img(src=require("../../../src/images/iron.svg"), alt="icons iron", height="32" width="32")
+              img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
               span.ps-3.lh-1 Гладильная доска и утюг
         hr
       .row 
@@ -162,4 +162,4 @@ block main
 block append footer
   script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script
-    include ../../../src/js/map-european-coast.js
+    include ../../js/map-european-coast.js
