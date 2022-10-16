@@ -1,0 +1,236 @@
+extends ../layout
+
+block append variables
+  - var images = ['DSC_02_01', 'DSC_02_02', 'DSC_02_03', 'DSC_02_04', 'DSC_02_05', 'DSC_02_06', 'DSC_02_07', 'DSC_02_08', 'DSC_02_09', 'DSC_02_10', 'DSC_02_11', 'DSC_02_12', 'DSC_02_13', 'DSC_02_14', 'DSC_02_15', 'DSC_02_16', 'DSC_02_17', 'DSC_02_18', 'DSC_02_19', 'DSC_02_20', 'DSC_02_21', 'DSC_02_22', 'DSC_02_23']
+
+block append head
+  each img in images
+    link(rel="preload", as="image", href=require(`../../images/${img}.jpg`))
+  link(rel="preconnect" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
+  link(rel="dns-prefetch" href="https://api-maps.yandex.ru/2.1/?load=package.standard&apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU")
+
+block header
+  +header('')
+
+block main
+  main.main
+    .container
+      .row
+        .col
+          h3.text-dark.mt-4 ТО САМОЕ МЕСТО В ЖК ЧКАЛОВ
+        hr
+      .row
+        .col-12.col-lg-7
+          +carusel('', images)
+        .col-12.col-lg-5.my-5.mt-lg-auto.mb-lg-0
+          p.h3.text-center.mb-5
+            | г. Новосибирск,
+            br
+            | ул. Светлановская, д. 52
+          .d-grid.gap-3.col-10.mx-auto
+            a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
+            a.btn.btn-lg.btn-warning.border-3(href='about.html' role="button") Связаться с нами
+        hr.mt-lg-4.mt-xl-5
+      .row 
+        .col-12.col-lg-2
+          h5 Локация:
+        .col-12.col-lg-10
+          h6 В шаговой доступности (7-15 минут) находятся:
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Станция Метро "Заельцовская"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Термальный комплекс с открытым бассейном "Мира Термы"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | ПКиО "Сосновый бор"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Крупнейший ТВК "Большая медведица", "Красный мамонт", "Hoff"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Ледовый дворец спорта "Сибирь"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Торговый центр "Metro cash and Carry"
+      .row 
+        .col-12.col-lg-2
+        .col-12.col-lg-10
+          h6 В 10 минутах на автомобиле:
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Центр города "Площадь Ленина"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Новосибирский зоопарк им. Р.А.Шило
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Дельфинарий
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Дендропарк
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Заельцовский парк, где можно разнообразно провести время (пешие прогулки, прогулки на велосипеде или роликах, поездка по детской  Железной дороге) 
+      .row 
+        .col-12.col-lg-2
+        .col-12.col-lg-10
+          h6 Рядом расположены:
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Сибирский государственный университет путей сообщения (СГУПС) 
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Новосибирский государственный медицинский университет
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Городская клиническая больница № 1
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Ледовый дворец спорта "Сибирь"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Центр подготовки по спортивной гимнастике Евгения Подгорного
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Кинотеатр, продуктовые магазины, аптеки, метро
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Параметры квартиры:
+        .col-12.col-lg-10 
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Площадь: 25 кв.м
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Спальных мест: 2
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Кровати: 1 двуспальный диван
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 О квартире:
+        .col-12.col-lg-10(style="text-align: justify;")
+          ul(style="list-style-type: none")
+            li
+              p.fw-bolder Просторная квартира на 14 этаже в новом ЖК "Чкалов". Закрытая территория с собственным сквером, новыми игровыми/детскими площадками на территории.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | В спальне расположены: кровать с прикроватными тумбочками, шкаф для ваших вещей, телевизор.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                |  Кухня-гостиная обеспечена всей необходимой бытовой техникой (холодильник с морозильной камерой, микроволновая печь, варочная панель, духовой шкаф и чайник), посудой для приготовления пищи и всеми необходимыми столовыми приборами на… персоны, а также комфортным диваном  и телевизором.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | В ванной комнате Вы сможете найти гель для душа, шампунь, зубные наборы для каждого гостя, ватные диски и ватные палочки.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Также в квартире вы найдете стиральную машину с капсулами для стирки, сушилку для белья, гладильную доску, утюг и фен.
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Удобства:
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              i.bi.bi-wifi(style="font-size: 2rem")
+              | &nbsp;&nbsp;&nbsp;Wi-Fi
+            li
+              img(src=require("../../images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Кухня
+            li
+              img(src=require("../../images/shower.svg"), alt="icons shower", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Душ
+            li
+              img(src=require("../../images/dryer.svg"), alt="icons dryer", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Фен
+            li.d-flex.align-items-center
+              img(src=require("../../images/washer.svg"), alt="icons washer", height="32" width="32")
+              span.ps-3.lh-1 Стиральная машина и сушилка для белья
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              img(src=require("../../images/tv.svg"), alt="icons tv", height="32" width="32")
+              span.ps-3.lh-1 Телевизор
+            li.lh-1
+              img(src=require("../../images/workspace.svg"), alt="icons workspace", height="32" width="32")
+              span.ps-3.lh-1 Рабочее место
+            li
+              img(src=require("../../images/towels.svg"), alt="icons towels", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Полотенца
+            li.d-flex.align-items-center
+              img(src=require("../../images/cream.svg"), alt="icons cream", height="32" width="32")
+              span.ps-3.lh-1 Предметы личной гигиены
+            li.d-flex.align-items-center
+              img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
+              span.ps-3.lh-1 Гладильная доска и утюг
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Условия:
+        .col-12.col-lg-10(style="text-align: justify;")
+          p Заезд: с 14:00&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Выезд: до 12:00
+          a.btn.btn-outline-info.border-2.my-3.text-dark(href='./rules.html') Ознакомьтесь с Правилами проживания
+        hr
+      .row
+        .col-11.mx-auto.my-3
+          #map(style="width: 100%; height: 400px")
+block append footer
+  script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
+  script
+    include ../../js/map-pithagoras.js

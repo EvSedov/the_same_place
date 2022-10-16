@@ -69,6 +69,10 @@ module.exports = {
       template: './src/pug/pages/pythagoras.pug',
       filename: 'pythagoras.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/chkalov.pug',
+      filename: 'chkalov.html'
+    })
   ],
   module: {
     rules: [
