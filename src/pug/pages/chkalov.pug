@@ -1,7 +1,7 @@
 extends ../layout
 
 block append variables
-  - var images = ['DSC_02_01', 'DSC_02_02', 'DSC_02_03', 'DSC_02_04', 'DSC_02_05', 'DSC_02_06', 'DSC_02_07', 'DSC_02_08', 'DSC_02_09', 'DSC_02_10', 'DSC_02_11', 'DSC_02_12', 'DSC_02_13', 'DSC_02_14', 'DSC_02_15', 'DSC_02_16', 'DSC_02_17', 'DSC_02_18', 'DSC_02_19', 'DSC_02_20', 'DSC_02_21', 'DSC_02_22', 'DSC_02_23']
+  - var images = ['chkalov', 'DSC_03_01', 'DSC_03_02', 'DSC_03_03', 'DSC_03_04', 'DSC_03_05', 'DSC_03_06', 'DSC_03_07', 'DSC_03_08', 'DSC_03_09', 'DSC_03_10', 'DSC_03_11', 'DSC_03_12', 'DSC_03_13', 'DSC_03_14', 'DSC_03_15', 'DSC_03_16', 'DSC_03_17', 'DSC_03_18', 'DSC_03_19', 'DSC_03_20', 'DSC_03_21', 'DSC_03_22', 'DSC_03_23', 'DSC_03_24', 'DSC_03_25', 'DSC_03_26', 'DSC_03_27', 'DSC_03_28', 'DSC_03_29', 'DSC_03_30', 'DSC_03_31']
 
 block append head
   each img in images
@@ -233,4 +233,4 @@ block main
 block append footer
   script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script
-    include ../../js/map-pithagoras.js
+    include ../../js/map-chkalov.js
