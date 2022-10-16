@@ -63,7 +63,7 @@
 }
 
 body {
-  font-family: "Comfortaa", sans-serif !important;
+  font-family: "Gill Sans", sans-serif !important;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -151,7 +151,7 @@ h3,
 }
 
 .btn-card {
-  width: 173px !important;
+  width: 175px !important;
 }
 
 .btn-tel {
