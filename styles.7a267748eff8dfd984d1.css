@@ -2431,7 +2431,7 @@ url(assets/e559bf06bc84fd9525e6.woff?8d200481aa7f02a2d63a331fc782cfaf) format("w
 }
 
 body {
-  font-family: "Comfortaa", sans-serif !important;
+  font-family: "Gill Sans", sans-serif !important;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -2519,7 +2519,7 @@ h3,
 }
 
 .btn-card {
-  width: 173px !important;
+  width: 175px !important;
 }
 
 .btn-tel {
@@ -2549,4 +2549,4 @@ h3,
 } */
 
 
-/*# sourceMappingURL=styles.9fe6cdf620a325fc57a0.css.map*/
+/*# sourceMappingURL=styles.7a267748eff8dfd984d1.css.map*/
