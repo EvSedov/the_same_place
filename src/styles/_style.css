@@ -173,6 +173,10 @@ h3,
   color: rgb(25, 135, 84) !important;
 }
 
+.no-border {
+  border: none !important;
+}
+
 /* @media (max-width: 500px) {
   .main-bg .container-fluid {
     height: 100% !important;

@@ -1,13 +1,31 @@
 mixin card(idForImg, imgClassName = '', imgName, imgExt, styleName = '', title = '', subTitle = '', arrOfText = '', arrOfSubText='')
-  .card.my-3(style = styleName)
+  .card.my-3.no-border(style = styleName)
     .row.g-0
       .col-lg-5
         +image(idForImg, imgClassName, imgName, imgExt)
       .col-lg-7
         .card-body.h-100.d-flex.flex-column.justify-content-center.align-items-start
-          h2.card-title.fw-bold= title
-          h3.card-title.fw-bold= subTitle
-          each text in arrOfText
-            p.card-text.fs-4.mt-3.fw-normal.lh-sm= text
-          each subText in arrOfSubText
-            p.card-text.text-muted.fs-4.fw-normal.lh-sm.mb-1= subText
+          if title == ''
+            h3.card-title.fw-bold= subTitle
+            each text in arrOfText
+              p.card-text.fs-4.mt-3.fw-normal.lh-sm= text
+            each subText in arrOfSubText
+              p.card-text.text-muted.fs-4.fw-normal.lh-sm.mb-1= subText
+          else if subTitle == ''
+            h2.card-title.fw-bold= title
+            each text in arrOfText
+              p.card-text.fs-4.mt-3.fw-normal.lh-sm= text
+            each subText in arrOfSubText
+              p.card-text.text-muted.fs-4.fw-normal.lh-sm.mb-1= subText
+          else if title == '' && subTitle == ''
+            each text in arrOfText
+              p.card-text.fs-4.mt-3.fw-normal.lh-sm= text
+            each subText in arrOfSubText
+              p.card-text.text-muted.fs-4.fw-normal.lh-sm.mb-1= subText
+          else
+            h2.card-title.fw-bold= title
+            h3.card-title.fw-bold= subTitle
+            each text in arrOfText
+              p.card-text.fs-4.mt-3.fw-normal.lh-sm= text
+            each subText in arrOfSubText
+              p.card-text.text-muted.fs-4.fw-normal.lh-sm.mb-1= subText
