@@ -7,7 +7,7 @@ function init() {
   }, {
     searchControlProvider: 'yandex#search'
   });
-  var myPlacemark = new ymaps.Placemark([55.040172, 82.963737], {}, {
+  var myPlacemark = new ymaps.Placemark([55.040172, 82.963737], { iconCaption: 'ЖК Пифагор' }, {
     preset: 'islands#redHomeIcon'
   });
   myMap.geoObjects.add(myPlacemark);
