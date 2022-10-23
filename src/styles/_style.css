@@ -76,10 +76,6 @@ body {
   font-family: "Gill Sans Bold", sans-serif !important;
 }
 
-.about p {
-  font-family: "Gill Sans", sans-serif !important;
-}
-
 .header,
 .footer {
   flex: 0 0 auto;
@@ -121,7 +117,7 @@ h4,
 h5,
 h6,
 .footer {
-  font-family: "Montserrat";
+  font-family: "Gill Sans Bold", sans-serif !important;
 }
 
 h1,
