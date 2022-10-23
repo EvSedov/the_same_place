@@ -16,7 +16,7 @@ function init() {
   }, {
     searchControlProvider: 'yandex#search'
   });
-  var myPlacemark = new ymaps.Placemark([55.077958, 82.924454], {}, {
+  var myPlacemark = new ymaps.Placemark([55.077958, 82.924454], { iconCaption: 'ЖК Чкалов' }, {
     preset: 'islands#redHomeIcon'
   });
   myMap.geoObjects.add(myPlacemark);
