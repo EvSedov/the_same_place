@@ -72,6 +72,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/chkalov.pug',
       filename: 'chkalov.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/comfortable-studio.pug',
+      filename: 'comfortable-studio.html'
     })
   ],
   module: {
