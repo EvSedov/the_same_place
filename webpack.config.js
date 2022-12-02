@@ -58,8 +58,8 @@ module.exports = {
       filename: 'recommend.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/european-coast-in-french.pug',
-      filename: 'european-coast-in-french.html'
+      template: './src/pug/pages/quiet-place.pug',
+      filename: 'quiet-place.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/rules.pug',

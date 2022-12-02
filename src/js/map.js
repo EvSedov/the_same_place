@@ -7,7 +7,7 @@ function init() {
   }, {
     searchControlProvider: 'yandex#search'
   });
-  var myPlacemark1 = new ymaps.Placemark([54.993272, 82.967196], { iconCaption: 'ЖК Европейский берег' }, {
+  var myPlacemark1 = new ymaps.Placemark([55.025090, 82.910647], { iconCaption: 'Тихий центр Новосибирска' }, {
     preset: 'islands#redHomeIcon'
   });
   var myPlacemark2 = new ymaps.Placemark([55.040172, 82.963737], { iconCaption: 'ЖК Пифагор' }, {
