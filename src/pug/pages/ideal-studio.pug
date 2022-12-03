@@ -1,7 +1,7 @@
 extends ../layout
 
 block append variables
-  - var images = ['DSC_04_13', 'DSC_04_01', 'DSC_04_02', 'DSC_04_03', 'DSC_04_04', 'DSC_04_05', 'DSC_04_06', 'DSC_04_07', 'DSC_04_09', 'DSC_04_10', 'DSC_04_11', 'DSC_04_12']
+  - var images = ['DSC_06_03', 'DSC_06_01', 'DSC_06_02', 'DSC_06_04', 'DSC_06_05', 'DSC_06_06']
 
 block append head
   each img in images
@@ -17,7 +17,7 @@ block main
     .container
       .row
         .col
-          h3.text-dark.mt-4 Тихий центр Новосибирска
+          h3.text-dark.mt-4 ТО САМОЕ МЕСТО В ИНСКИХ ХОЛМАХ (судия № 1)
         hr
       .row
         .col-12.col-lg-7
@@ -26,7 +26,7 @@ block main
           p.h3.text-center.mb-5
             | г. Новосибирск,
             br
-            | ул. Революции, д. 6
+            | ул. Большевистская, д. 35
           .d-grid.gap-3.col-10.mx-auto
             a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
             a.btn.btn-lg.btn-warning.border-3(href='https://wa.me/79137400459?text=Добрый%20день.%20Перешел%20к%20вам%20в%20группу%20с%20сайта.%20Я%20бы%20хотел%20' target='_blank' role="button") Связаться с нами
@@ -40,43 +40,29 @@ block main
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | Площадь: 25 кв.м
+                | Площадь: 20 кв.м
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | Спальных мест: 2 + 1
+                | Спальных мест: 2 + 2
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | Кровати: 1 двуспальная кровать, 1 кресло-кровать
+                | Кровати: 1 двуспальная кровать, 1 диван-кровать
         hr
       .row 
         .col-12.col-lg-2
           h5 Локация:
-        .col-12.col-lg-10 
+        .col-12.col-lg-10
+          h6 000000000000000000000000000000000000000:
           ul(style="list-style-type: none")
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | В доме находится Новосибирский государственный театральный институт и Аттестационный технический центр.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | В 300 метрах от квартиры располагается Новосибирская государственная академия водного транспорта.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | В 3 минутах пешком располагается театр Красный факел.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Рядом с домом находятся самые популярные и лучшие кафе и рестораны города Новосибирска.
+                | 0000000000000000000000000000000000000
         hr
       .row 
         .col-12.col-lg-2
@@ -84,17 +70,12 @@ block main
         .col-12.col-lg-10(style="text-align: justify;")
           ul(style="list-style-type: none")
             li
-              p.fw-bolder Уютная однокомнатная квартира в самом центре Новосибирска станет для вас лучшим жильем для временного пребывания. 
+              p.fw-bolder Идеальная студия для проживания 2 человек, но может вместить и до 4 человек.
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | В квартире есть кондиционер, микроволновая печь, стиральная машинка, фен, утюг и гладильная доска, посуда, кастрюли и сковородки, холодильник, кровать Кингсайз, огромный шкаф купе, кресло – кровать, комод, домофон, телевизор с кабельным телевидением, wi-fi.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | В квартире сделан Дизайнерский ремонт. Вся мебель новая.
+                | В студии имеется 4 шкафа для хранения вещей. Вам будет удобно если Вы приедете с ребенком.
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
@@ -152,4 +133,4 @@ block main
 block append footer
   script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script
-    include ../../js/map-quiet-place.js
+    include ../../js/map-ideal-studio.js
