@@ -7,8 +7,8 @@ function init() {
   }, {
     searchControlProvider: 'yandex#search'
   });
-  var myPlacemark = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студия № 2 в "Инских холмах"' }, {
-    preset: 'islands#pinkHomeIcon'
+  var myPlacemark = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студия № 3 в "Инских холмах"' }, {
+    preset: 'islands#darkOrangeHomeIcon'
   });
   myMap.geoObjects.add(myPlacemark);
 };

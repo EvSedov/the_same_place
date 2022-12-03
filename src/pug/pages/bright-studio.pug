@@ -1,7 +1,7 @@
 extends ../layout
 
 block append variables
-  - var images = ['DSC_06_03', 'DSC_06_01', 'DSC_06_02', 'DSC_06_04', 'DSC_06_05', 'DSC_06_06']
+  - var images = ['DSC_07_04', 'DSC_07_01', 'DSC_07_02', 'DSC_07_03', 'DSC_07_05', 'DSC_07_06', 'DSC_07_07', 'DSC_07_08', 'DSC_07_09']
 
 block append head
   each img in images
@@ -17,7 +17,7 @@ block main
     .container
       .row
         .col
-          h3.text-dark.mt-4 ТО САМОЕ МЕСТО В ИНСКИХ ХОЛМАХ (судия № 1)
+          h3.text-dark.mt-4 ТО САМОЕ МЕСТО В ИНСКИХ ХОЛМАХ (судия № 3)
         hr
       .row
         .col-12.col-lg-7
@@ -50,7 +50,7 @@ block main
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | Кровати: 1 двуспальная кровать
+                | Кровати: 1 диван-кровать
         hr
       .row 
         .col-12.col-lg-2
@@ -133,4 +133,4 @@ block main
 block append footer
   script(async src="https://api-maps.yandex.ru/2.1/?apikey=93a7b337-c4cc-4afa-ac28-b9fd05f89ecd&lang=ru_RU&onload=init" type="text/javascript")
   script
-    include ../../js/map-ideal-studio.js
+    include ../../js/map-bright-studio.js

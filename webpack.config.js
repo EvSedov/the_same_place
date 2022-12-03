@@ -80,6 +80,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/ideal-studio.pug',
       filename: 'ideal-studio.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/bright-studio.pug',
+      filename: 'bright-studio.html'
     })
   ],
   module: {
