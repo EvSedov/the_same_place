@@ -16,13 +16,7 @@ function init() {
   var myPlacemark3 = new ymaps.Placemark([55.077958, 82.924454], { iconCaption: 'ЖК Чкалов' }, {
     preset: 'islands#greenHomeIcon'
   });
-  var myPlacemark4 = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студия № 1 в "Инских холмах"' }, {
-    preset: 'islands#yellowHomeIcon'
-  });
-  var myPlacemark5 = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студия № 2 в "Инских холмах"' }, {
-    preset: 'islands#pinkHomeIcon'
-  });
-  var myPlacemark6 = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студия № 3 в "Инских холмах"' }, {
+  var myPlacemark4 = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студии в "Инских холмах"' }, {
     preset: 'islands#darkOrangeHomeIcon'
   });
 
@@ -30,8 +24,6 @@ function init() {
   myMap.geoObjects.add(myPlacemark2);
   myMap.geoObjects.add(myPlacemark3);
   myMap.geoObjects.add(myPlacemark4);
-  myMap.geoObjects.add(myPlacemark5);
-  myMap.geoObjects.add(myPlacemark6);
 };
 
 // ymaps.ready(init);

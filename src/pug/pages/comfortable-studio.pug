@@ -20,37 +20,111 @@ block main
           h3.text-dark.mt-4 ТО САМОЕ МЕСТО В ИНСКИХ ХОЛМАХ (судия № 1)
         hr
       .row
-        .col-12.col-lg-7
+        .col-12.col-lg-7.mb-5.mb-lg-3
           +carusel('', images)
-        .col-12.col-lg-5.my-5.mt-lg-auto.mb-lg-0
-          p.h3.text-center.mb-5
+        .col-12.col-lg-5.mt-3.mb-4.mt-lg-auto.mb-lg-3
+          p.h3.text-center.mb-3.mb-lg-5
             | г. Новосибирск,
             br
             | ул. Большевистская, д. 35
-          .d-grid.gap-3.col-10.mx-auto
-            a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
-            a.btn.btn-lg.btn-warning.border-3(href='https://wa.me/79137400459?text=Добрый%20день.%20Перешел%20к%20вам%20в%20группу%20с%20сайта.%20Я%20бы%20хотел%20' target='_blank' role="button") Связаться с нами
-        hr.mt-lg-4.mt-xl-5
-      .row 
-        .col-12.col-lg-2
-          h5 Параметры квартиры:
-        .col-12.col-lg-10 
-          ul(style="list-style-type: none")
+          h5.text-center Параметры квартиры:
+          ul.text-center.mb-4.mb-lg-5(style="list-style-type: none")
             li
-              p
+              p.mb-1
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Площадь: 19 кв.м
             li
-              p
+              p.mb-1
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Спальных мест: 2 + 2
             li
-              p
+              p.mb-1
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Кровати: 1 двуспальная кровать, 1 диван-кровать
+          .d-grid.gap-3.col-8.mx-auto
+            a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
+            a.btn.btn-lg.btn-warning.border-3(href='https://wa.me/79137400459?text=Добрый%20день.%20Перешел%20к%20вам%20в%20группу%20с%20сайта.%20Я%20бы%20хотел%20' target='_blank' role="button") Связаться с нами
+        hr.mt-lg-5
+      .row 
+        .col-12.col-lg-2
+          h5 О квартире:
+        .col-12.col-lg-10(style="text-align: justify;")
+          ul(style="list-style-type: none")
+            li
+              p.fw-bolder Данный объект является уникальным и первым на нашем опыте, так как изначально большая квартира была разделена на три студии! Каждая студия представляет собой отдельную квартиру, с входной дверью. Эти студии объединяет общий коридор, поэтому, Вы смело можете приезжать к нам большой компанией, где каждый будет жить в отдельной студии-квартире.
+            li
+              p.fw-bolder Комфортная студия для проживания 2 человек, но может вместить и до 4 человек.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Большое количество мест для хранения вещей, есть 4 шкафа. Вам будет удобно если Вы приедете с ребенком.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Компактная кухня, кухонная утварь в наличии, посуда рассчитана на 4-х гостей.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Жилая зона для вашего комфорта оборудована удобной кроватью, ТВ-зоной, диван-кроватью и уютными бра для чтения.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Шторы blackout - максимально блокируют дневной свет.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Прекрасный вид из окна на Новосибирск.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | В наличии: микроволновка, чайник, электрическая плита, стиральная машина, фен, утюг, гладильная доска и гвоздь наших студий - ВОДОНАГРЕВАТЕЛЬ.
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Удобства:
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              i.bi.bi-wifi(style="font-size: 2rem")
+              | &nbsp;&nbsp;&nbsp;Wi-Fi
+            li
+              img(src=require("../../images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Кухня
+            li
+              img(src=require("../../images/shower.svg"), alt="icons shower", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Душ
+            li
+              img(src=require("../../images/dryer.svg"), alt="icons dryer", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Фен
+            li.d-flex.align-items-center
+              img(src=require("../../images/washer.svg"), alt="icons washer", height="32" width="32")
+              span.ps-3.lh-1 Стиральная машина и сушилка для белья
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              img(src=require("../../images/tv.svg"), alt="icons tv", height="32" width="32")
+              span.ps-3.lh-1 Телевизор
+            li.lh-1
+              img(src=require("../../images/workspace.svg"), alt="icons workspace", height="32" width="32")
+              span.ps-3.lh-1 Рабочее место
+            li
+              img(src=require("../../images/towels.svg"), alt="icons towels", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Полотенца
+            li.d-flex.align-items-center
+              img(src=require("../../images/cream.svg"), alt="icons cream", height="32" width="32")
+              span.ps-3.lh-1 Предметы личной гигиены
+            li.d-flex.align-items-center
+              img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
+              span.ps-3.lh-1 Гладильная доска и утюг
         hr
       .row 
         .col-12.col-lg-2
@@ -93,11 +167,6 @@ block main
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | 4 км до НИИТО
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
                 | 5 км до Регионального центра волейбола «Локомотив-Арена»
             li
               p
@@ -108,85 +177,7 @@ block main
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                |  7 км до Зоопарка, Дельфинария, Океанариума, Ботанического сада
-        hr
-      .row 
-        .col-12.col-lg-2
-          h5 О квартире:
-        .col-12.col-lg-10(style="text-align: justify;")
-          ul(style="list-style-type: none")
-            li
-              p.fw-bolder Данный объект является уникальным и первым на нашем опыте, так как изначально большая квартира была разделена на три студии! Каждая студия представляет собой отдельную квартиру, с входной дверью. Эти студии объединяет общий коридор, поэтому, Вы смело можете приезжать к нам большой компанией, где каждый будет жить в отдельной студии-квартире.
-            li
-              p.fw-bolder Комфортная студия для проживания 2 человек, но может вместить и до 4 человек.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Большое количество мест для хранения вещей, есть 4 шкафа. Вам будет удобно если Вы приедете с ребенком.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Компактная кухня, кухонная утварь в наличии, посуда рассчитана на 4-х гостей.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Жилая зона для вашего комфорта оборудована удобной кроватью, ТВ-зоной, диван-кроватью и уютными бра для чтения.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Шторы blackout - максимально блокируют дневной свет.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Прекрасный вид из окна на Новосибирск.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | В наличии: микроволновка, чайник, электрическая плита, стиральная машина, фен, утюг, гладильная доска и гвоздь наших студий - ВОДОНАГРЕВАТЕЛЬ, он жизненно необходим, когда в городе отключают горячую воду.
-        hr
-      .row 
-        .col-12.col-lg-2
-          h5 Удобства:
-        .col-12.col-md-6.col-lg-5
-          ul.d-grid.gap-3(style="list-style-type: none")
-            li.lh-1
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-            li
-              img(src=require("../../images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Кухня
-            li
-              img(src=require("../../images/shower.svg"), alt="icons shower", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Душ
-            li
-              img(src=require("../../images/dryer.svg"), alt="icons dryer", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Фен
-            li.d-flex.align-items-center
-              img(src=require("../../images/washer.svg"), alt="icons washer", height="32" width="32")
-              span.ps-3.lh-1 Стиральная машина и сушилка для белья
-        .col-12.col-md-6.col-lg-5
-          ul.d-grid.gap-3(style="list-style-type: none")
-            li.lh-1
-              img(src=require("../../images/tv.svg"), alt="icons tv", height="32" width="32")
-              span.ps-3.lh-1 Телевизор
-            li.lh-1
-              img(src=require("../../images/workspace.svg"), alt="icons workspace", height="32" width="32")
-              span.ps-3.lh-1 Рабочее место
-            li
-              img(src=require("../../images/towels.svg"), alt="icons towels", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Полотенца
-            li.d-flex.align-items-center
-              img(src=require("../../images/cream.svg"), alt="icons cream", height="32" width="32")
-              span.ps-3.lh-1 Предметы личной гигиены
-            li.d-flex.align-items-center
-              img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
-              span.ps-3.lh-1 Гладильная доска и утюг
+                |  7 км до Зоопарка, Дельфинария, Океанариума
         hr
       .row 
         .col-12.col-lg-2

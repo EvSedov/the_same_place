@@ -20,96 +20,34 @@ block main
           h3.text-dark.mt-4 ТО САМОЕ МЕСТО В ИНСКИХ ХОЛМАХ (судия № 2)
         hr
       .row
-        .col-12.col-lg-7
+        .col-12.col-lg-7.mb-lg-3
           +carusel('', images)
         .col-12.col-lg-5.my-5.mt-lg-auto.mb-lg-0
-          p.h3.text-center.mb-5
+          p.h3.text-center.mb-3.mb-lg-5
             | г. Новосибирск,
             br
             | ул. Большевистская, д. 35
-          .d-grid.gap-3.col-10.mx-auto
-            a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
-            a.btn.btn-lg.btn-warning.border-3(href='https://wa.me/79137400459?text=Добрый%20день.%20Перешел%20к%20вам%20в%20группу%20с%20сайта.%20Я%20бы%20хотел%20' target='_blank' role="button") Связаться с нами
-        hr.mt-lg-4.mt-xl-5
-      .row 
-        .col-12.col-lg-2
-          h5 Параметры квартиры:
-        .col-12.col-lg-10 
-          ul(style="list-style-type: none")
+          h5.text-center Параметры квартиры:
+          ul.text-center.mb-4.mb-lg-5(style="list-style-type: none")
             li
-              p
+              p.mb-1
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Площадь: 17 кв.м
             li
-              p
+              p.mb-1
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Спальных мест: 2
             li
-              p
+              p.mb-1
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Кровати: 1 двуспальная кровать
-        hr
-      .row 
-        .col-12.col-lg-2
-          h5 Локация:
-        .col-12.col-lg-10
-          p.fw-bolder(style="text-align: justify;") Что такое «Инские Холмы» – это сити-квартал с неповторимой каскадной архитектурой. Комплекс располагается вдоль ключевой городской магистрали – улицы Большевистской. Безусловным преимуществом является шаговая доступность обновленной набережной реки Обь - отличное место для прогулки с семьей, любимыми и встречи с друзьями, а доступность метро «Речной вокзал» позволит Вам быстро добраться как на левый, так и на правый берег.
-          h6 В шаговой доступности (7-15 минут) находятся:
-          ul(style="list-style-type: none")
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Государственная публичная научно-техническая библиотека СО РАН.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Станция метро "Речной Вокзал".
-      .row 
-        .col-12.col-lg-2
-        .col-12.col-lg-10
-          h6 В 15-20 минутах на автомобиле:
-          ul(style="list-style-type: none")
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | 4 км до НИИТО
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | 4 км до Новосибирский государственный академический театр оперы и балета
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | 4 км до Ж.Д. вокзала
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | 4 км до НИИТО
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | 5 км до Регионального центра волейбола «Локомотив-Арена»
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | 6 км до Аквапарка "Аквамир"
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                |  7 км до Зоопарка, Дельфинария, Океанариума, Ботанического сада
-        hr
+          .d-grid.gap-3.col-8.mx-auto
+            a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
+            a.btn.btn-lg.btn-warning.border-3(href='https://wa.me/79137400459?text=Добрый%20день.%20Перешел%20к%20вам%20в%20группу%20с%20сайта.%20Я%20бы%20хотел%20' target='_blank' role="button") Связаться с нами
+        hr.mt-lg-4.mt-xl-5
       .row 
         .col-12.col-lg-2
           h5 О квартире:
@@ -185,6 +123,59 @@ block main
             li.d-flex.align-items-center
               img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
               span.ps-3.lh-1 Гладильная доска и утюг
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Локация:
+        .col-12.col-lg-10
+          p.fw-bolder(style="text-align: justify;") Что такое «Инские Холмы» – это сити-квартал с неповторимой каскадной архитектурой. Комплекс располагается вдоль ключевой городской магистрали – улицы Большевистской. Безусловным преимуществом является шаговая доступность обновленной набережной реки Обь - отличное место для прогулки с семьей, любимыми и встречи с друзьями, а доступность метро «Речной вокзал» позволит Вам быстро добраться как на левый, так и на правый берег.
+          h6 В шаговой доступности (7-15 минут) находятся:
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Государственная публичная научно-техническая библиотека СО РАН.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Станция метро "Речной Вокзал".
+      .row 
+        .col-12.col-lg-2
+        .col-12.col-lg-10
+          h6 В 15-20 минутах на автомобиле:
+          ul(style="list-style-type: none")
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | 4 км до НИИТО
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | 4 км до Новосибирский государственный академический театр оперы и балета
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | 4 км до Ж.Д. вокзала
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | 5 км до Регионального центра волейбола «Локомотив-Арена»
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | 6 км до Аквапарка "Аквамир"
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                |  7 км до Зоопарка, Дельфинария, Океанариума
         hr
       .row 
         .col-12.col-lg-2

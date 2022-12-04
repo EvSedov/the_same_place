@@ -27,30 +27,92 @@ block main
             | г. Новосибирск,
             br
             | ул. Светлановская, д. 52
-          .d-grid.gap-3.col-10.mx-auto
+          h5.text-center Параметры квартиры:
+          ul.text-center.mb-4.mb-lg-5(style="list-style-type: none")
+            li
+              p.mb-1
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Площадь: 50 кв.м
+            li
+              p.mb-1
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Спальных мест: 2 + 2
+            li
+              p.mb-1
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Кровати: 1 двуспальная кровать, 1 двуспальный диван
+          .d-grid.gap-3.col-8.mx-auto
             a.btn.btn-lg.btn-danger.border-3(href='booking.html' role="button") Забронировать
             a.btn.btn-lg.btn-warning.border-3(href='https://wa.me/79137400459?text=Добрый%20день.%20Перешел%20к%20вам%20в%20группу%20с%20сайта.%20Я%20бы%20хотел%20' target='_blank' role="button") Связаться с нами
         hr.mt-lg-4.mt-xl-5
       .row 
         .col-12.col-lg-2
-          h5 Параметры квартиры:
-        .col-12.col-lg-10 
+          h5 О квартире:
+        .col-12.col-lg-10(style="text-align: justify;")
           ul(style="list-style-type: none")
             li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Площадь: 50 кв.м
+              p.fw-bolder Просторная квартира на 14 этаже в новом ЖК "Чкалов". Закрытая территория с собственным сквером, новыми игровыми/детскими площадками на территории.
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | Спальных мест: 2 + 2
+                | В спальне расположены: кровать с прикроватными тумбочками, шкаф для ваших вещей, телевизор.
             li
               p
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
-                | Кровати: 1 двуспальная кровать, 1 двуспальный диван
+                |  Кухня-гостиная обеспечена всей необходимой бытовой техникой (холодильник с морозильной камерой, микроволновая печь, варочная панель, духовой шкаф и чайник), посудой для приготовления пищи и всеми необходимыми столовыми приборами на… персоны, а также комфортным диваном  и телевизором.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | В ванной комнате Вы сможете найти гель для душа, шампунь, зубные наборы для каждого гостя, ватные диски и ватные палочки.
+            li
+              p
+                span.fw-bolder(style="color: #8B511D") ✓
+                |
+                | Также в квартире вы найдете стиральную машину с капсулами для стирки, сушилку для белья, гладильную доску, утюг и фен.
+        hr
+      .row 
+        .col-12.col-lg-2
+          h5 Удобства:
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              i.bi.bi-wifi(style="font-size: 2rem")
+              | &nbsp;&nbsp;&nbsp;Wi-Fi
+            li
+              img(src=require("../../images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Кухня
+            li
+              img(src=require("../../images/shower.svg"), alt="icons shower", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Душ
+            li
+              img(src=require("../../images/dryer.svg"), alt="icons dryer", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Фен
+            li.d-flex.align-items-center
+              img(src=require("../../images/washer.svg"), alt="icons washer", height="32" width="32")
+              span.ps-3.lh-1 Стиральная машина и сушилка для белья
+        .col-12.col-md-6.col-lg-5
+          ul.d-grid.gap-3(style="list-style-type: none")
+            li.lh-1
+              img(src=require("../../images/tv.svg"), alt="icons tv", height="32" width="32")
+              span.ps-3.lh-1 Телевизор
+            li.lh-1
+              img(src=require("../../images/workspace.svg"), alt="icons workspace", height="32" width="32")
+              span.ps-3.lh-1 Рабочее место
+            li
+              img(src=require("../../images/towels.svg"), alt="icons towels", height="32" width="32")
+              | &nbsp;&nbsp;&nbsp;Полотенца
+            li.d-flex.align-items-center
+              img(src=require("../../images/cream.svg"), alt="icons cream", height="32" width="32")
+              span.ps-3.lh-1 Предметы личной гигиены
+            li.d-flex.align-items-center
+              img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
+              span.ps-3.lh-1 Гладильная доска и утюг
         hr
       .row 
         .col-12.col-lg-2
@@ -153,72 +215,6 @@ block main
                 span.fw-bolder(style="color: #8B511D") ✓
                 |
                 | Кинотеатр, продуктовые магазины, аптеки, метро
-        hr
-      .row 
-        .col-12.col-lg-2
-          h5 О квартире:
-        .col-12.col-lg-10(style="text-align: justify;")
-          ul(style="list-style-type: none")
-            li
-              p.fw-bolder Просторная квартира на 14 этаже в новом ЖК "Чкалов". Закрытая территория с собственным сквером, новыми игровыми/детскими площадками на территории.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | В спальне расположены: кровать с прикроватными тумбочками, шкаф для ваших вещей, телевизор.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                |  Кухня-гостиная обеспечена всей необходимой бытовой техникой (холодильник с морозильной камерой, микроволновая печь, варочная панель, духовой шкаф и чайник), посудой для приготовления пищи и всеми необходимыми столовыми приборами на… персоны, а также комфортным диваном  и телевизором.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | В ванной комнате Вы сможете найти гель для душа, шампунь, зубные наборы для каждого гостя, ватные диски и ватные палочки.
-            li
-              p
-                span.fw-bolder(style="color: #8B511D") ✓
-                |
-                | Также в квартире вы найдете стиральную машину с капсулами для стирки, сушилку для белья, гладильную доску, утюг и фен.
-        hr
-      .row 
-        .col-12.col-lg-2
-          h5 Удобства:
-        .col-12.col-md-6.col-lg-5
-          ul.d-grid.gap-3(style="list-style-type: none")
-            li.lh-1
-              i.bi.bi-wifi(style="font-size: 2rem")
-              | &nbsp;&nbsp;&nbsp;Wi-Fi
-            li
-              img(src=require("../../images/kitchen.svg"), alt="icons kitchen", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Кухня
-            li
-              img(src=require("../../images/shower.svg"), alt="icons shower", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Душ
-            li
-              img(src=require("../../images/dryer.svg"), alt="icons dryer", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Фен
-            li.d-flex.align-items-center
-              img(src=require("../../images/washer.svg"), alt="icons washer", height="32" width="32")
-              span.ps-3.lh-1 Стиральная машина и сушилка для белья
-        .col-12.col-md-6.col-lg-5
-          ul.d-grid.gap-3(style="list-style-type: none")
-            li.lh-1
-              img(src=require("../../images/tv.svg"), alt="icons tv", height="32" width="32")
-              span.ps-3.lh-1 Телевизор
-            li.lh-1
-              img(src=require("../../images/workspace.svg"), alt="icons workspace", height="32" width="32")
-              span.ps-3.lh-1 Рабочее место
-            li
-              img(src=require("../../images/towels.svg"), alt="icons towels", height="32" width="32")
-              | &nbsp;&nbsp;&nbsp;Полотенца
-            li.d-flex.align-items-center
-              img(src=require("../../images/cream.svg"), alt="icons cream", height="32" width="32")
-              span.ps-3.lh-1 Предметы личной гигиены
-            li.d-flex.align-items-center
-              img(src=require("../../images/iron.svg"), alt="icons iron", height="32" width="32")
-              span.ps-3.lh-1 Гладильная доска и утюг
         hr
       .row 
         .col-12.col-lg-2
