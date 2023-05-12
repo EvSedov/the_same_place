@@ -10,16 +10,10 @@ function init() {
   var myPlacemark1 = new ymaps.Placemark([55.025090, 82.910647], { iconCaption: 'Тихий центр Новосибирска' }, {
     preset: 'islands#redHomeIcon'
   });
-  var myPlacemark2 = new ymaps.Placemark([55.040172, 82.963737], { iconCaption: 'ЖК Пифагор' }, {
-    preset: 'islands#blueHomeIcon'
-  });
-  var myPlacemark3 = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студии в "Инских холмах"' }, {
+  var myPlacemark2 = new ymaps.Placemark([55.011009, 82.931650], { iconCaption: 'Студии в "Инских холмах"' }, {
     preset: 'islands#darkOrangeHomeIcon'
   });
 
   myMap.geoObjects.add(myPlacemark1);
   myMap.geoObjects.add(myPlacemark2);
-  myMap.geoObjects.add(myPlacemark3);
 };
-
-// ymaps.ready(init);
