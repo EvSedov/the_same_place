@@ -4,9 +4,9 @@
   "description": "[Ссылка на сайт](https://evsedov.github.io/the_same_place/)",
   "main": "index.js",
   "scripts": {
-    "start": "export NODE_ENV=development && webpack serve",
-    "dev": "export NODE_ENV=development && webpack",
-    "build": "export NODE_ENV=production && webpack",
+    "start": "set NODE_ENV=development && webpack serve",
+    "dev": "set NODE_ENV=development && webpack",
+    "build": "set NODE_ENV=production && webpack",
     "deploy": "npx gh-pages -d dist"
   },
   "repository": {
